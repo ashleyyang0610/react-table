@@ -1,5 +1,19 @@
 @import "reset-context";
 
-.component {
+.table {
     reset-context();
+    table-layout: fixed;
+    border-collapse: collapse;
+    th, td {
+        border: 1px solid #ccc;
+    }
+}
+
+.table--light {
+    background-color: #f5f5f5;
+}
+
+.table--dark {
+    color: #fff;
+    background-color: #191919;
 }

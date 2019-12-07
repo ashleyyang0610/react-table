@@ -1,0 +1,25 @@
+/*! react-table v0.1.0 | (c) 2019 Trend Micro Inc. | MIT |  */
+.table---table---2aBqd {
+  box-sizing: border-box;
+  line-height: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.table---table---2aBqd *,
+.table---table---2aBqd *:before,
+.table---table---2aBqd *:after {
+  box-sizing: inherit;
+}
+.table---table---2aBqd th,
+.table---table---2aBqd td {
+  border: 1px solid #ccc;
+}
+.table---table--light---3-Gom {
+  color: #f5f5f5;
+}
+.table---table--dark---1aA6B {
+  color: #191919;
+}
+
+
+/*# sourceMappingURL=react-table.css.map*/
