@@ -1,3 +1,3 @@
-import Component from './Component';
+import Table from './Table';
 
-export default Component;
+export default Table;

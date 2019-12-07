@@ -51,10 +51,10 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             modules: {
-                                localIdentName: `${localClassPrefix}---[local]---[hash:base64:5]`,
+                                localIdentName: `${localClassPrefix}---[local]---[hash:base64:5]`
                             },
                             importLoaders: 1,
-                            localsConvention: 'camelCase',
+                            localsConvention: 'camelCase'
                         }
                     },
                     'stylus-loader'
@@ -62,10 +62,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(png|jpg|svg)$/,
@@ -93,11 +90,15 @@ module.exports = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: '../dist/[name].css',
+            filename: '../dist/[name].css'
         }),
         new webpack.BannerPlugin(banner)
     ],
     resolve: {
-        extensions: ['.js', '.json', '.jsx']
+        extensions: ['.js', '.json', '.jsx'],
+        modules: [
+            path.join(__dirname, 'src'),
+            path.join(__dirname, 'node_modules')
+        ]
     }
 };

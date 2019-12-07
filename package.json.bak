@@ -1,7 +1,7 @@
 {
-  "name": "react-table",
+  "name": "@trendmicro/react-component",
   "version": "0.1.0",
-  "description": "React Table",
+  "description": "React Component",
   "main": "lib/index.js",
   "files": [
     "dist",
@@ -11,7 +11,7 @@
     "prepare": "npm run lint && npm test && npm run clean && npm run build && npm run styleguide:build",
     "build": "webpack-cli && npm run cleancss",
     "clean": "rm -f {lib,dist}/*",
-    "cleancss": "cleancss -o dist/react-table.min.css dist/react-table.css",
+    "cleancss": "cleancss -o dist/react-component.min.css dist/react-component.css",
     "demo": "http-server -p 8000 docs/",
     "lint": "npm run eslint && npm run stylint",
     "eslint": "eslint --ext .js --ext .jsx *.js src test",
@@ -24,23 +24,24 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/trendmicro-frontend/react-component.git"
   },
   "author": "ashley_yang <ashley.yang0610@gmail.com>",
   "contributors": [
     {
       "name": "ashley_yang",
-      "email": "ashley.yang0610@gmail.com"
+      "email": "",
+      "url": "https://github.com/trendmicro-frontend"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/trendmicro-frontend/react-component/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/trendmicro-frontend/react-component",
   "keywords": [
     "react",
-    "react-table"
+    "react-component"
   ],
   "peerDependencies": {
     "react": ">=15.0.0"

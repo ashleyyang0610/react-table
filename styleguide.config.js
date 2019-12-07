@@ -8,7 +8,7 @@ const webpackConfig = {
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         disableHostCheck: true,
-        contentBase: path.resolve(__dirname, 'docs'),
+        contentBase: path.resolve(__dirname, 'docs')
     },
     entry: path.resolve(__dirname, 'src/index.js'),
     module: {
@@ -32,10 +32,10 @@ const webpackConfig = {
                         loader: 'css-loader',
                         options: {
                             modules: {
-                                localIdentName: '[local]---[hash:base64:5]',
+                                localIdentName: '[local]---[hash:base64:5]'
                             },
                             importLoaders: 1,
-                            localsConvention: 'camelCase',
+                            localsConvention: 'camelCase'
                         }
                     },
                     'stylus-loader'
@@ -43,10 +43,7 @@ const webpackConfig = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(png|jpg|svg)$/,
@@ -83,13 +80,14 @@ const webpackConfig = {
 };
 
 module.exports = {
-    title: `React Component v${pkg.version}`,
+    title: `React Table v${pkg.version}`,
     sections: [
         {
-            name: 'Components',
-            components: [
-                'Component',
-            ].map(c => path.resolve(__dirname, `src/${c}.jsx`))
+            name: 'Basic Table',
+            content: path.resolve(
+                __dirname,
+                'styleguide/examples/BasicTable.md'
+            )
         }
     ],
     require: [
@@ -97,17 +95,16 @@ module.exports = {
         path.resolve(__dirname, 'styleguide/setup.js'),
         path.resolve(__dirname, 'styleguide/styles.css')
     ],
-    ribbon: {
-        url: pkg.homepage,
-        text: 'Fork me on GitHub'
-    },
     serverPort: 8080,
     exampleMode: 'expand',
     usageMode: 'expand',
     showSidebar: true,
     styleguideComponents: {
-        StyleGuideRenderer: path.join(__dirname, 'styleguide/components/StyleGuideRenderer.jsx'),
-        Wrapper: path.join(__dirname, 'styleguide/components/Wrapper.jsx'),
+        StyleGuideRenderer: path.join(
+            __dirname,
+            'styleguide/components/StyleGuideRenderer.jsx'
+        ),
+        Wrapper: path.join(__dirname, 'styleguide/components/Wrapper.jsx')
     },
     styleguideDir: 'docs/',
     webpackConfig: webpackConfig

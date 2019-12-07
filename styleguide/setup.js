@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import Component from '../src';
+import Table from '../src';
 
 global.Fragment = Fragment;
-global.Component = Component;
+global.Table = Table;

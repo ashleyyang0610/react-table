@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import GitHubCorner from 'react-github-corner';
 import styled from 'styled-components';
-import pkg from '../../package.json';
 
 const Root = styled.div`
     min-height: 100vh;
@@ -40,32 +38,21 @@ const TextBlock = styled(Block)`
     font-weight: normal;
 `;
 
-const StyleGuideRenderer = ({
-    title,
-    toc,
-    children,
-}) => {
+const StyleGuideRenderer = ({ title, toc, children }) => {
     return (
         <Root>
-            <GitHubCorner href={pkg.homepage} />
             <Sidebar>
-                <TextBlock>
-                    {title}
-                </TextBlock>
-                <Block>
-                    {toc}
-                </Block>
+                <TextBlock>{title}</TextBlock>
+                <Block>{toc}</Block>
             </Sidebar>
-            <Main id="example">
-                {children}
-            </Main>
+            <Main id="example">{children}</Main>
         </Root>
     );
 };
 
 StyleGuideRenderer.propTypes = {
     title: PropTypes.string,
-    toc: PropTypes.node,
+    toc: PropTypes.node
 };
 
 export default StyleGuideRenderer;
