@@ -1,0 +1,22 @@
+.table---2aBqd {
+  box-sizing: border-box;
+  line-height: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.table---2aBqd *,
+.table---2aBqd *:before,
+.table---2aBqd *:after {
+  box-sizing: inherit;
+}
+.table---2aBqd th,
+.table---2aBqd td {
+  border: 1px solid #ccc;
+}
+.table--light---3-Gom {
+  color: #f5f5f5;
+}
+.table--dark---1aA6B {
+  color: #191919;
+}
+
