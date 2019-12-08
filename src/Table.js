@@ -19,6 +19,7 @@ const Table = ({
     emptyRender,
     fixedHeader,
     height,
+    hoverable,
     loading,
     theme,
     width,
@@ -29,6 +30,7 @@ const Table = ({
     };
 
     const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
+    const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
 
     return (
         <TableContext.Provider value={context}>
@@ -39,6 +41,7 @@ const Table = ({
                     styles.table,
                     styles[`table--${theme}`],
                     fixedHeaderClass,
+                    hoverableTableClass,
                     className
                 )}
             >
@@ -59,6 +62,7 @@ Table.defaultProps = {
     emptyRender: () => 'No data',
     fixedHeader: false,
     height: 150,
+    hoverable: true,
     loading: false,
     theme: 'light'
 };
@@ -69,6 +73,7 @@ Table.propTypes = {
     emptyRender: PropTypes.func,
     fixedHeader: PropTypes.bool,
     height: PropTypes.number,
+    hoverable: PropTypes.bool,
     loading: PropTypes.bool,
     theme: PropTypes.oneOf(['dark', 'light']),
     width: PropTypes.string.isRequired
