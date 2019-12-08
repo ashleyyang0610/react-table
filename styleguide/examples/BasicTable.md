@@ -1,6 +1,6 @@
 ```jsx
 const columns = [
-    { title: 'Name', dataKey: 'name' },
+    { title: 'Name', dataKey: 'name', width: '300px' },
     { title: 'Gender', dataKey: 'gender' },
     { title: 'Type', dataKey: 'type' },
     { title: 'Age', dataKey: 'age' },

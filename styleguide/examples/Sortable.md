@@ -1,3 +1,5 @@
+The sortable columns in the example are: "Name", "Age".
+
 ```jsx
 initialState = {
     sortColumnKey: 'name',
@@ -88,7 +90,7 @@ const sortableColumns = columns.map((column, index) => {
     return column;
 });
 
-const sortableData = _orderBy(data, [state.sortColumnKey], [state.sortOrder]);
+const sortedData = _orderBy(data, [state.sortColumnKey], [state.sortOrder]);
 
-<Table columns={sortableColumns} data={sortableData} width="600px" />;
+<Table columns={sortableColumns} data={sortedData} width="600px" />;
 ```

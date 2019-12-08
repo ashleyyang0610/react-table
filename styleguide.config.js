@@ -84,6 +84,10 @@ module.exports = {
     sections: [
         {
             name: 'React Table',
+            components: [
+                path.resolve(__dirname, `src/Table.js`),
+                path.resolve(__dirname, `src/Pagination.js`)
+            ],
             sections: [
                 {
                     name: 'Basic Table',
@@ -107,6 +111,13 @@ module.exports = {
                             content: path.resolve(
                                 __dirname,
                                 'styleguide/examples/DarkThemeTable.md'
+                            )
+                        },
+                        {
+                            name: 'Customize Theme color',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/customizedThemeColorTable.md'
                             )
                         }
                     ]
@@ -179,10 +190,22 @@ module.exports = {
                 },
                 {
                     name: 'Pagination',
-                    content: path.resolve(
-                        __dirname,
-                        'styleguide/examples/Pagination.md'
-                    )
+                    sections: [
+                        {
+                            name: 'Pagination table',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/Pagination.md'
+                            )
+                        },
+                        {
+                            name: 'Customize Pagination',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/CustomizedPagination.md'
+                            )
+                        }
+                    ]
                 }
             ]
         }

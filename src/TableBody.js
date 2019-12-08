@@ -40,11 +40,16 @@ const TableBody = ({
                             {columns.map((column, cellIndex) => {
                                 const cellKey = `table-header-cell-${rowIndex}-${cellIndex}`;
                                 const cellVal = _get(row, column.dataKey);
+                                const { width } = column;
                                 const cell =
                                     typeof column.render === 'function'
                                         ? column.render(cellVal, row, rowIndex)
                                         : cellVal;
-                                return <td key={cellKey}>{cell}</td>;
+                                return (
+                                    <td key={cellKey} width={width}>
+                                        {cell}
+                                    </td>
+                                );
                             })}
                         </tr>
                     );

@@ -29,8 +29,10 @@ const Table = ({
         theme
     };
 
+    const emptyTableClass = data.length === 0 ? styles['table--empty'] : '';
     const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
     const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
+    const loadingTableClass = loading ? styles['table--loading'] : '';
 
     return (
         <TableContext.Provider value={context}>
@@ -40,8 +42,10 @@ const Table = ({
                 className={cx(
                     styles.table,
                     styles[`table--${theme}`],
+                    emptyTableClass,
                     fixedHeaderClass,
                     hoverableTableClass,
+                    loadingTableClass,
                     className
                 )}
             >
@@ -68,14 +72,41 @@ Table.defaultProps = {
 };
 
 Table.propTypes = {
+    /**
+     * The columns config of table.
+     */
     columns: PropTypes.array.isRequired,
+    /**
+     * Data record array to be rendered.
+     */
     data: PropTypes.array.isRequired,
+    /**
+     * Empty content render function.
+     */
     emptyRender: PropTypes.func,
+    /**
+     * Whether table head is fixed.
+     */
     fixedHeader: PropTypes.bool,
+    /**
+     * The height of the table.
+     */
     height: PropTypes.number,
+    /**
+     * Whether use row hover style.
+     */
     hoverable: PropTypes.bool,
+    /**
+     * Whether table is loading.
+     */
     loading: PropTypes.bool,
+    /**
+     * Type of table theme.
+     */
     theme: PropTypes.oneOf(['dark', 'light']),
+    /**
+     * The width of the table.
+     */
     width: PropTypes.string.isRequired
 };
 
