@@ -83,11 +83,89 @@ module.exports = {
     title: `React Table v${pkg.version}`,
     sections: [
         {
-            name: 'Basic Table',
-            content: path.resolve(
-                __dirname,
-                'styleguide/examples/BasicTable.md'
-            )
+            name: 'React Table',
+            sections: [
+                {
+                    name: 'Basic Table',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/BasicTable.md'
+                    )
+                },
+                {
+                    name: 'Theme Table',
+                    sections: [
+                        {
+                            name: 'Light Theme',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/LightThemeTable.md'
+                            )
+                        },
+                        {
+                            name: 'Dark Theme',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/DarkThemeTable.md'
+                            )
+                        }
+                    ]
+                },
+                {
+                    name: 'Loading Table',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/LoadingTable.md'
+                    )
+                },
+                {
+                    name: 'Empty Table',
+                    sections: [
+                        {
+                            name: 'Default Empty Table',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/EmptyData.md'
+                            )
+                        },
+                        {
+                            name: 'Customized Empty Table',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/CustomizedEmptyData.md'
+                            )
+                        }
+                    ]
+                },
+                {
+                    name: 'FixedHeader',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/FixedHeader.md'
+                    )
+                },
+                {
+                    name: 'Sortable',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/Sortable.md'
+                    )
+                },
+                {
+                    name: 'Hoverable',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/Hoverable.md'
+                    )
+                },
+                {
+                    name: 'Pagination',
+                    content: path.resolve(
+                        __dirname,
+                        'styleguide/examples/Pagination.md'
+                    )
+                }
+            ]
         }
     ],
     require: [

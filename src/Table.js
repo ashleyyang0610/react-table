@@ -17,17 +17,18 @@ const Table = ({
     columns,
     data,
     emptyRender,
-    height,
-    showEmpty,
-    theme,
-    loading,
     fixedHeader,
+    height,
+    loading,
+    theme,
     width,
     ...props
 }) => {
     const context = {
         theme
     };
+
+    const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
 
     return (
         <TableContext.Provider value={context}>
@@ -37,29 +38,39 @@ const Table = ({
                 className={cx(
                     styles.table,
                     styles[`table--${theme}`],
+                    fixedHeaderClass,
                     className
                 )}
             >
                 <TableHeader columns={columns} />
-                <TableBody columns={columns} data={data} />
+                <TableBody
+                    columns={columns}
+                    data={data}
+                    emptyRender={emptyRender}
+                    fixedHeader={fixedHeader}
+                    loading={loading}
+                />
             </TableWrapper>
         </TableContext.Provider>
     );
 };
 
 Table.defaultProps = {
-    theme: 'dark'
+    emptyRender: () => 'No data',
+    fixedHeader: false,
+    height: 150,
+    loading: false,
+    theme: 'light'
 };
 
 Table.propTypes = {
     columns: PropTypes.array.isRequired,
     data: PropTypes.array.isRequired,
     emptyRender: PropTypes.func,
-    height: PropTypes.number,
-    showEmpty: PropTypes.bool,
-    theme: PropTypes.oneOf(['dark', 'light']),
-    loading: PropTypes.bool,
     fixedHeader: PropTypes.bool,
+    height: PropTypes.number,
+    loading: PropTypes.bool,
+    theme: PropTypes.oneOf(['dark', 'light']),
     width: PropTypes.string.isRequired
 };
 

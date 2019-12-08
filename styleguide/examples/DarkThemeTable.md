@@ -50,5 +50,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table columns={columns} data={data} theme="dark" width="100%" />;
 ```

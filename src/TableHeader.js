@@ -7,9 +7,10 @@ const TableHeader = ({ columns, ...props }) => {
             <tr>
                 {columns.map((column, index) => {
                     const key = `table-header-cell-${index}`;
-                    const { title } = column;
+                    const { title, width } = column;
+
                     return (
-                        <th key={key}>
+                        <th key={key} width={width}>
                             {typeof title === 'function'
                                 ? title(column)
                                 : title}

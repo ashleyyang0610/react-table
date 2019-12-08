@@ -1,0 +1,21 @@
+```jsx
+const columns = [
+    { title: 'Name', dataKey: 'name' },
+    { title: 'Gender', dataKey: 'gender' },
+    { title: 'Type', dataKey: 'type' },
+    { title: 'Age', dataKey: 'age' },
+    { title: 'Color', dataKey: 'color' }
+];
+
+const data = [];
+
+const emptyRender = () => {
+    return (
+        <p style={{ color: '#bbb', lineHeight: '100px', textAlign: 'center' }}>
+            No available data found
+        </p>
+    );
+};
+
+<Table columns={columns} data={data} emptyRender={emptyRender} width="100%" />;
+```

@@ -50,5 +50,12 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table
+    columns={columns}
+    data={data}
+    fixedHeader={true}
+    height={100}
+    theme="light"
+    width="100%"
+/>;
 ```

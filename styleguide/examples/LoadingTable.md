@@ -50,5 +50,11 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table
+    theme="light"
+    columns={columns}
+    data={data}
+    loading={true}
+    width="100%"
+/>;
 ```
