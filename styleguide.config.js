@@ -112,6 +112,25 @@ module.exports = {
                     ]
                 },
                 {
+                    name: 'Customize Table Cell',
+                    sections: [
+                        {
+                            name: 'Customize Table Body Cell',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/CustomizedTableBodyCell.md'
+                            )
+                        },
+                        {
+                            name: 'Customize Table Header Cell',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/CustomizedTableHeaderCell.md'
+                            )
+                        }
+                    ]
+                },
+                {
                     name: 'Loading Table',
                     content: path.resolve(
                         __dirname,
