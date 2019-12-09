@@ -1,12 +1,10 @@
-Use `theme` props to control the table theme.
-
-The default value of `theme` is `light`.
+Set `height` props to make the table scrollable vertically.
 
 See [table props usage](#table) for the details.
 
 ```jsx
 const columns = [
-    { title: 'Name', dataKey: 'name' },
+    { title: 'Name', dataKey: 'name', width: '300px' },
     { title: 'Gender', dataKey: 'gender' },
     { title: 'Type', dataKey: 'type' },
     { title: 'Age', dataKey: 'age' },
@@ -56,5 +54,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} theme="light" width="100%" />;
+<Table columns={columns} data={data} height={150} width="100%" />;
 ```

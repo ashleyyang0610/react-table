@@ -1,3 +1,9 @@
+Combine the `<Pagination />` component and `<Table />` component to realize a pagination table.
+
+See [table props usage](#table) for the details.
+
+See [pagination props usage](#pagination-1) for the details.
+
 ```jsx
 initialState = {
     page: 1

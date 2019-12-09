@@ -34,27 +34,47 @@ const Table = ({
     const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
     const loadingTableClass = loading ? styles['table--loading'] : '';
 
+    const tableHeightStyles = !fixedHeader
+        ? {
+              display: 'block',
+              height: `${height} -24px`,
+              overflowY: 'auto'
+          }
+        : {};
+
+    console.log(
+        typeof cx(
+            styles.table,
+            styles[`table--${theme}`],
+            emptyTableClass,
+            fixedHeaderClass,
+            hoverableTableClass,
+            loadingTableClass
+        )
+    );
+
     return (
         <TableContext.Provider value={context}>
             <TableWrapper
                 {...props}
                 width={width}
-                className={cx(
+                style={tableHeightStyles}
+                className={`${cx(
                     styles.table,
                     styles[`table--${theme}`],
                     emptyTableClass,
                     fixedHeaderClass,
                     hoverableTableClass,
-                    loadingTableClass,
-                    className
-                )}
+                    loadingTableClass
+                )} ${className}`}
             >
-                <TableHeader columns={columns} />
+                <TableHeader columns={columns} fixedHeader={fixedHeader} />
                 <TableBody
                     columns={columns}
                     data={data}
                     emptyRender={emptyRender}
                     fixedHeader={fixedHeader}
+                    height={height}
                     loading={loading}
                 />
             </TableWrapper>
@@ -65,7 +85,6 @@ const Table = ({
 Table.defaultProps = {
     emptyRender: () => 'No data',
     fixedHeader: false,
-    height: 150,
     hoverable: true,
     loading: false,
     theme: 'light'

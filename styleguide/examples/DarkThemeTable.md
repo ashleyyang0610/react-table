@@ -1,3 +1,9 @@
+Set `theme="dark"` props to render a dark theme table.
+
+The default value of `theme` is `light`.
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },

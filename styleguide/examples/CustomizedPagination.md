@@ -1,5 +1,9 @@
 #### Customize button content
 
+Use `prevPageRenderer`, `nextPageRenderer`, `lastPageRenderer`, `firstPageRenderer` props to cusomize the content of the buttons yourself.
+
+See [pagination props usage](#pagination-1) for the details.
+
 ```jsx
 initialState = {
     page: 1
@@ -31,8 +35,6 @@ const firstPageRenderer = () => 'First';
 #### Customize pagination styles
 
 ```jsx
-import './index.css';
-
 initialState = {
     page: 1
 };

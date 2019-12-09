@@ -1,3 +1,7 @@
+Set `loading` props to control the table loading status.
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },

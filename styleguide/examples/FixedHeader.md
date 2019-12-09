@@ -1,3 +1,7 @@
+Set `fixedHeader` props true to make the table header fixed and the table body scrollable once the table height is greater than `height` props value.
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },

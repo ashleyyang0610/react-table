@@ -90,14 +90,71 @@ module.exports = {
             ],
             sections: [
                 {
-                    name: 'Basic Table',
-                    content: path.resolve(
-                        __dirname,
-                        'styleguide/examples/BasicTable.md'
-                    )
+                    name: 'Basic',
+                    sections: [
+                        {
+                            name: '',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/BasicTable.md'
+                            )
+                        },
+                        {
+                            name: 'Hoverable',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/Hoverable.md'
+                            )
+                        },
+                        {
+                            name: 'Scrollable',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/Scrollable.md'
+                            )
+                        },
+                        {
+                            name: 'FixedHeader',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/FixedHeader.md'
+                            )
+                        }
+                    ]
                 },
                 {
-                    name: 'Theme Table',
+                    name: 'Status',
+                    sections: [
+                        {
+                            name: 'Loading',
+                            content: path.resolve(
+                                __dirname,
+                                'styleguide/examples/LoadingTable.md'
+                            )
+                        },
+                        {
+                            name: 'Empty',
+                            sections: [
+                                {
+                                    name: 'Empty Status - Default',
+                                    content: path.resolve(
+                                        __dirname,
+                                        'styleguide/examples/EmptyData.md'
+                                    )
+                                },
+                                {
+                                    name: 'Empty status - Customized',
+                                    content: path.resolve(
+                                        __dirname,
+                                        'styleguide/examples/CustomizedEmptyData.md'
+                                    )
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: 'Theme',
                     sections: [
                         {
                             name: 'Light Theme',
@@ -117,23 +174,23 @@ module.exports = {
                             name: 'Customize Theme color',
                             content: path.resolve(
                                 __dirname,
-                                'styleguide/examples/customizedThemeColorTable.md'
+                                'styleguide/examples/CustomizedThemeColorTable.md'
                             )
                         }
                     ]
                 },
                 {
-                    name: 'Customize Table Cell',
+                    name: 'Customize Cell',
                     sections: [
                         {
-                            name: 'Customize Table Body Cell',
+                            name: 'Customize Body Cell',
                             content: path.resolve(
                                 __dirname,
                                 'styleguide/examples/CustomizedTableBodyCell.md'
                             )
                         },
                         {
-                            name: 'Customize Table Header Cell',
+                            name: 'Customize Header Cell',
                             content: path.resolve(
                                 __dirname,
                                 'styleguide/examples/CustomizedTableHeaderCell.md'
@@ -142,50 +199,10 @@ module.exports = {
                     ]
                 },
                 {
-                    name: 'Loading Table',
-                    content: path.resolve(
-                        __dirname,
-                        'styleguide/examples/LoadingTable.md'
-                    )
-                },
-                {
-                    name: 'Empty Table',
-                    sections: [
-                        {
-                            name: 'Default Empty Table',
-                            content: path.resolve(
-                                __dirname,
-                                'styleguide/examples/EmptyData.md'
-                            )
-                        },
-                        {
-                            name: 'Customized Empty Table',
-                            content: path.resolve(
-                                __dirname,
-                                'styleguide/examples/CustomizedEmptyData.md'
-                            )
-                        }
-                    ]
-                },
-                {
-                    name: 'FixedHeader',
-                    content: path.resolve(
-                        __dirname,
-                        'styleguide/examples/FixedHeader.md'
-                    )
-                },
-                {
-                    name: 'Sortable',
+                    name: 'Sorting Table',
                     content: path.resolve(
                         __dirname,
                         'styleguide/examples/Sortable.md'
-                    )
-                },
-                {
-                    name: 'Hoverable',
-                    content: path.resolve(
-                        __dirname,
-                        'styleguide/examples/Hoverable.md'
                     )
                 },
                 {

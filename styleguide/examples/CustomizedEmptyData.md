@@ -1,3 +1,9 @@
+When data length is 0, the empty content would be shown.
+
+Set `emptyRender` for a function which help you customize the empty content.
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },

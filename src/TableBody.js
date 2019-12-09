@@ -16,7 +16,7 @@ const TableBody = ({
 }) => {
     const showEmpty = data.length === 0;
     return (
-        <tbody style={{ maxHeight: fixedHeader ? `${height - 24}px` : null }}>
+        <tbody style={{ maxHight: fixedHeader ? `${height - 24}px` : null }}>
             {loading && (
                 <tr>
                     <td colSpan={columns.length}>

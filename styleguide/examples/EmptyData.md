@@ -1,3 +1,7 @@
+When data length is 0, the empty content would be shown. The default empty content is "No data".
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },

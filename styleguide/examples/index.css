@@ -2,3 +2,30 @@
     color: red;
     font-weight: bold;
 }
+
+[data-testid='Customize Theme color-example-1'] [class*='table--light'] {
+    background-color: #fff;
+}
+
+[data-testid='Customize Theme color-example-1'] [class*='table--light'] thead {
+    background: #f5f5f5;
+    color: #888;
+}
+
+[data-testid='Customize Theme color-example-3'] [class*='table--dark'] {
+    background-color: #222;
+    color: #808080;
+}
+
+[data-testid='Customize Theme color-example-3'] [class*='table--dark'] thead {
+    background: #393939;
+    color: #00ad5f;
+}
+
+[data-testid='Customize Theme color-example-3'] [class*='table--dark'] th {
+    border-color: #393939;
+}
+
+[data-testid='Customize Theme color-example-3'] [class*='table--dark'] td {
+    border-color: #222;
+}

@@ -1,3 +1,7 @@
+Set `hoverable` props `true` to make the table hoverable.
+
+See [table props usage](#table) for the details.
+
 ```jsx
 const columns = [
     { title: 'Name', dataKey: 'name' },
