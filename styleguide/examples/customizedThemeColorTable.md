@@ -200,7 +200,7 @@ const data = [
 ];
 
 <Table
-    className="customize-theme"
+    className="customize-theme--blue"
     columns={columns}
     data={data}
     width="100%"

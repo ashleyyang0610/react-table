@@ -29,3 +29,21 @@
 [data-testid='Customize Theme color-example-3'] [class*='table--dark'] td {
     border-color: #222;
 }
+
+.customize-theme--blue {
+    background-color: #fff;
+}
+
+.customize-theme--blue thead {
+    background-color: #6c7ae0;
+    color: #fff;
+}
+
+.customize-theme--blue td {
+    color: #808080;
+}
+
+.customize-theme--blue tbody tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+
