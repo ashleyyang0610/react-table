@@ -2,6 +2,8 @@
 
 ## Get Start
 
+**Put all source files into a folder `react-table` first.**
+
 ### Import from the build files directly
 
 ```js
