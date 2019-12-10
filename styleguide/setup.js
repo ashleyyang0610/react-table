@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import _capitalize from 'lodash/capitalize';
-import _orderBy from 'lodash/orderBy';
+import _capitalize from 'lodash.capitalize';
+import _orderBy from 'lodash.orderBy';
 import Table, { Pagination } from '../src';
 import './examples/index.css';
 

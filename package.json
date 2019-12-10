@@ -46,7 +46,9 @@
     },
     "dependencies": {
         "classnames": "^2.2.6",
+        "lodash.capitalize": "^4.2.1",
         "lodash.get": "^4.4.2",
+        "lodash.orderby": "^4.6.0",
         "lodash.uniqueid": "^4.0.1",
         "prop-types": "^15.6.0",
         "react": "~16.8.0"
