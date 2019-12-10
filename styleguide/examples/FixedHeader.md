@@ -10,7 +10,7 @@ const columns = [
     { title: 'Gender', dataKey: 'gender' },
     { title: 'Type', dataKey: 'type' },
     { title: 'Age', dataKey: 'age' },
-    { title: 'Color', dataKey: 'color', width: 400 }
+    { title: 'Color', dataKey: 'color' }
 ];
 
 const data = [

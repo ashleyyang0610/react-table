@@ -22,27 +22,27 @@ const TableBody = ({
 
     useEffect(() => {
         if (!!tableBodyRef && tableBodyRef.current) {
-            const tableBodyStatus =
+            const tableBodyScrollStatus =
                 tableBodyRef.current.offsetHeight <
                 tableBodyRef.current.scrollHeight;
             const scrollbarWidth =
                 tableBodyRef.current.parentNode.clientWidth -
                 tableBodyRef.current.clientWidth;
             setTableScrollbarWidth(scrollbarWidth);
-            setTableBodyScrollStatus(tableBodyStatus);
+            setTableBodyScrollStatus(tableBodyScrollStatus);
 
-            if (tableBodyStatus && !!lastTdRef && lastTdRef.current) {
+            if (!!lastTdRef && lastTdRef.current) {
                 setLastTdWidth(lastTdRef.current.getBoundingClientRect().width);
             }
         }
-    }, []);
+    }, [columns, data, emptyRender, fixedHeader, height, loading, props]);
 
     const showEmpty = data.length === 0;
 
     return (
         <tbody
             ref={tableBodyRef}
-            style={{ maxHight: fixedHeader ? `${height - 24}px` : null }}
+            style={{ height: fixedHeader ? `${height - 37}px` : null }}
         >
             {loading && (
                 <tr>
@@ -61,11 +61,10 @@ const TableBody = ({
             {!loading &&
                 !showEmpty &&
                 data.map((row, rowIndex) => {
-                    const rowKey = `table-header-row-${rowIndex}`;
                     return (
-                        <tr key={rowKey}>
+                        <tr key={row.uuid}>
                             {columns.map((column, cellIndex) => {
-                                const cellKey = `table-header-cell-${rowIndex}-${cellIndex}`;
+                                const cellKey = `table_cell__${cellIndex}`;
                                 const cellVal = _get(row, column.dataKey);
                                 const { width } = column;
                                 const cell =

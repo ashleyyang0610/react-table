@@ -211,6 +211,7 @@ exports[`Table fixed table height should render correctly 1`] = `
                 "id": 1,
                 "name": "Hana",
                 "type": "dog",
+                "uuid": "table_row__16",
               },
               Object {
                 "age": 8,
@@ -219,6 +220,7 @@ exports[`Table fixed table height should render correctly 1`] = `
                 "id": 2,
                 "name": "Lucky",
                 "type": "dog",
+                "uuid": "table_row__17",
               },
               Object {
                 "age": 2,
@@ -227,6 +229,7 @@ exports[`Table fixed table height should render correctly 1`] = `
                 "id": 3,
                 "name": "Ginger",
                 "type": "cat",
+                "uuid": "table_row__18",
               },
               Object {
                 "age": 3,
@@ -235,6 +238,7 @@ exports[`Table fixed table height should render correctly 1`] = `
                 "id": 4,
                 "name": "Kiwi",
                 "type": "rabbit",
+                "uuid": "table_row__19",
               },
               Object {
                 "age": 7,
@@ -243,6 +247,7 @@ exports[`Table fixed table height should render correctly 1`] = `
                 "id": 5,
                 "name": "Max",
                 "type": "dog",
+                "uuid": "table_row__20",
               },
             ]
           }
@@ -257,156 +262,156 @@ exports[`Table fixed table height should render correctly 1`] = `
           <tbody
             style={
               Object {
-                "maxHight": null,
+                "height": null,
               }
             }
           >
             <tr
-              key="table-header-row-0"
+              key="table_row__16"
             >
               <td
-                key="table-header-cell-0-0"
+                key="table_cell__0"
                 width={300}
               >
                 Hana
               </td>
               <td
-                key="table-header-cell-0-1"
+                key="table_cell__1"
               >
                 female
               </td>
               <td
-                key="table-header-cell-0-2"
+                key="table_cell__2"
               >
                 dog
               </td>
               <td
-                key="table-header-cell-0-3"
+                key="table_cell__3"
               >
                 4
               </td>
               <td
-                key="table-header-cell-0-4"
+                key="table_cell__4"
               >
                 black
               </td>
             </tr>
             <tr
-              key="table-header-row-1"
+              key="table_row__17"
             >
               <td
-                key="table-header-cell-1-0"
+                key="table_cell__0"
                 width={300}
               >
                 Lucky
               </td>
               <td
-                key="table-header-cell-1-1"
+                key="table_cell__1"
               >
                 male
               </td>
               <td
-                key="table-header-cell-1-2"
+                key="table_cell__2"
               >
                 dog
               </td>
               <td
-                key="table-header-cell-1-3"
+                key="table_cell__3"
               >
                 8
               </td>
               <td
-                key="table-header-cell-1-4"
+                key="table_cell__4"
               >
                 white
               </td>
             </tr>
             <tr
-              key="table-header-row-2"
+              key="table_row__18"
             >
               <td
-                key="table-header-cell-2-0"
+                key="table_cell__0"
                 width={300}
               >
                 Ginger
               </td>
               <td
-                key="table-header-cell-2-1"
+                key="table_cell__1"
               >
                 female
               </td>
               <td
-                key="table-header-cell-2-2"
+                key="table_cell__2"
               >
                 cat
               </td>
               <td
-                key="table-header-cell-2-3"
+                key="table_cell__3"
               >
                 2
               </td>
               <td
-                key="table-header-cell-2-4"
+                key="table_cell__4"
               >
                 orange
               </td>
             </tr>
             <tr
-              key="table-header-row-3"
+              key="table_row__19"
             >
               <td
-                key="table-header-cell-3-0"
+                key="table_cell__0"
                 width={300}
               >
                 Kiwi
               </td>
               <td
-                key="table-header-cell-3-1"
+                key="table_cell__1"
               >
                 male
               </td>
               <td
-                key="table-header-cell-3-2"
+                key="table_cell__2"
               >
                 rabbit
               </td>
               <td
-                key="table-header-cell-3-3"
+                key="table_cell__3"
               >
                 3
               </td>
               <td
-                key="table-header-cell-3-4"
+                key="table_cell__4"
               >
                 gray
               </td>
             </tr>
             <tr
-              key="table-header-row-4"
+              key="table_row__20"
             >
               <td
-                key="table-header-cell-4-0"
+                key="table_cell__0"
                 width={300}
               >
                 Max
               </td>
               <td
-                key="table-header-cell-4-1"
+                key="table_cell__1"
               >
                 female
               </td>
               <td
-                key="table-header-cell-4-2"
+                key="table_cell__2"
               >
                 dog
               </td>
               <td
-                key="table-header-cell-4-3"
+                key="table_cell__3"
               >
                 7
               </td>
               <td
-                key="table-header-cell-4-4"
+                key="table_cell__4"
               >
                 brown
               </td>
@@ -494,6 +499,7 @@ exports[`Table fixed table width should render correctly 1`] = `
               "id": 1,
               "name": "Hana",
               "type": "dog",
+              "uuid": "table_row__21",
             },
             Object {
               "age": 8,
@@ -502,6 +508,7 @@ exports[`Table fixed table width should render correctly 1`] = `
               "id": 2,
               "name": "Lucky",
               "type": "dog",
+              "uuid": "table_row__22",
             },
             Object {
               "age": 2,
@@ -510,6 +517,7 @@ exports[`Table fixed table width should render correctly 1`] = `
               "id": 3,
               "name": "Ginger",
               "type": "cat",
+              "uuid": "table_row__23",
             },
             Object {
               "age": 3,
@@ -518,6 +526,7 @@ exports[`Table fixed table width should render correctly 1`] = `
               "id": 4,
               "name": "Kiwi",
               "type": "rabbit",
+              "uuid": "table_row__24",
             },
             Object {
               "age": 7,
@@ -526,6 +535,7 @@ exports[`Table fixed table width should render correctly 1`] = `
               "id": 5,
               "name": "Max",
               "type": "dog",
+              "uuid": "table_row__25",
             },
           ]
         }
@@ -650,6 +660,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
             Object {
               "dataKey": "color",
               "title": "Color",
+              "width": 0,
             },
           ]
         }
@@ -700,7 +711,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               key="table-header-cell-4"
               style={
                 Object {
-                  "width": "undefinedpx",
+                  "width": "0px",
                 }
               }
             >
@@ -744,6 +755,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               "id": 1,
               "name": "Hana",
               "type": "dog",
+              "uuid": "table_row__26",
             },
             Object {
               "age": 8,
@@ -752,6 +764,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               "id": 2,
               "name": "Lucky",
               "type": "dog",
+              "uuid": "table_row__27",
             },
             Object {
               "age": 2,
@@ -760,6 +773,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               "id": 3,
               "name": "Ginger",
               "type": "cat",
+              "uuid": "table_row__28",
             },
             Object {
               "age": 3,
@@ -768,6 +782,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               "id": 4,
               "name": "Kiwi",
               "type": "rabbit",
+              "uuid": "table_row__29",
             },
             Object {
               "age": 7,
@@ -776,6 +791,7 @@ exports[`Table fixedHeader table should render correctly 1`] = `
               "id": 5,
               "name": "Max",
               "type": "dog",
+              "uuid": "table_row__30",
             },
           ]
         }
@@ -790,156 +806,156 @@ exports[`Table fixedHeader table should render correctly 1`] = `
         <tbody
           style={
             Object {
-              "maxHight": "76px",
+              "height": "63px",
             }
           }
         >
           <tr
-            key="table-header-row-0"
+            key="table_row__26"
           >
             <td
-              key="table-header-cell-0-0"
+              key="table_cell__0"
               width={300}
             >
               Hana
             </td>
             <td
-              key="table-header-cell-0-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-0-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-0-3"
+              key="table_cell__3"
             >
               4
             </td>
             <td
-              key="table-header-cell-0-4"
+              key="table_cell__4"
             >
               black
             </td>
           </tr>
           <tr
-            key="table-header-row-1"
+            key="table_row__27"
           >
             <td
-              key="table-header-cell-1-0"
+              key="table_cell__0"
               width={300}
             >
               Lucky
             </td>
             <td
-              key="table-header-cell-1-1"
+              key="table_cell__1"
             >
               male
             </td>
             <td
-              key="table-header-cell-1-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-1-3"
+              key="table_cell__3"
             >
               8
             </td>
             <td
-              key="table-header-cell-1-4"
+              key="table_cell__4"
             >
               white
             </td>
           </tr>
           <tr
-            key="table-header-row-2"
+            key="table_row__28"
           >
             <td
-              key="table-header-cell-2-0"
+              key="table_cell__0"
               width={300}
             >
               Ginger
             </td>
             <td
-              key="table-header-cell-2-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-2-2"
+              key="table_cell__2"
             >
               cat
             </td>
             <td
-              key="table-header-cell-2-3"
+              key="table_cell__3"
             >
               2
             </td>
             <td
-              key="table-header-cell-2-4"
+              key="table_cell__4"
             >
               orange
             </td>
           </tr>
           <tr
-            key="table-header-row-3"
+            key="table_row__29"
           >
             <td
-              key="table-header-cell-3-0"
+              key="table_cell__0"
               width={300}
             >
               Kiwi
             </td>
             <td
-              key="table-header-cell-3-1"
+              key="table_cell__1"
             >
               male
             </td>
             <td
-              key="table-header-cell-3-2"
+              key="table_cell__2"
             >
               rabbit
             </td>
             <td
-              key="table-header-cell-3-3"
+              key="table_cell__3"
             >
               3
             </td>
             <td
-              key="table-header-cell-3-4"
+              key="table_cell__4"
             >
               gray
             </td>
           </tr>
           <tr
-            key="table-header-row-4"
+            key="table_row__30"
           >
             <td
-              key="table-header-cell-4-0"
+              key="table_cell__0"
               width={300}
             >
               Max
             </td>
             <td
-              key="table-header-cell-4-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-4-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-4-3"
+              key="table_cell__3"
             >
               7
             </td>
             <td
-              key="table-header-cell-4-4"
+              key="table_cell__4"
             >
               brown
             </td>
@@ -1109,7 +1125,7 @@ exports[`Table test empty data dsiplay should render correctly 1`] = `
         <tbody
           style={
             Object {
-              "maxHight": null,
+              "height": null,
             }
           }
         >
@@ -1326,6 +1342,7 @@ exports[`Table test loading status should render correctly 1`] = `
               "id": 1,
               "name": "Hana",
               "type": "dog",
+              "uuid": "table_row__6",
             },
             Object {
               "age": 8,
@@ -1334,6 +1351,7 @@ exports[`Table test loading status should render correctly 1`] = `
               "id": 2,
               "name": "Lucky",
               "type": "dog",
+              "uuid": "table_row__7",
             },
             Object {
               "age": 2,
@@ -1342,6 +1360,7 @@ exports[`Table test loading status should render correctly 1`] = `
               "id": 3,
               "name": "Ginger",
               "type": "cat",
+              "uuid": "table_row__8",
             },
             Object {
               "age": 3,
@@ -1350,6 +1369,7 @@ exports[`Table test loading status should render correctly 1`] = `
               "id": 4,
               "name": "Kiwi",
               "type": "rabbit",
+              "uuid": "table_row__9",
             },
             Object {
               "age": 7,
@@ -1358,6 +1378,7 @@ exports[`Table test loading status should render correctly 1`] = `
               "id": 5,
               "name": "Max",
               "type": "dog",
+              "uuid": "table_row__10",
             },
           ]
         }
@@ -1371,7 +1392,7 @@ exports[`Table test loading status should render correctly 1`] = `
         <tbody
           style={
             Object {
-              "maxHight": null,
+              "height": null,
             }
           }
         >
@@ -1539,6 +1560,7 @@ exports[`Table unhoverable table should render correctly 1`] = `
               "id": 1,
               "name": "Hana",
               "type": "dog",
+              "uuid": "table_row__11",
             },
             Object {
               "age": 8,
@@ -1547,6 +1569,7 @@ exports[`Table unhoverable table should render correctly 1`] = `
               "id": 2,
               "name": "Lucky",
               "type": "dog",
+              "uuid": "table_row__12",
             },
             Object {
               "age": 2,
@@ -1555,6 +1578,7 @@ exports[`Table unhoverable table should render correctly 1`] = `
               "id": 3,
               "name": "Ginger",
               "type": "cat",
+              "uuid": "table_row__13",
             },
             Object {
               "age": 3,
@@ -1563,6 +1587,7 @@ exports[`Table unhoverable table should render correctly 1`] = `
               "id": 4,
               "name": "Kiwi",
               "type": "rabbit",
+              "uuid": "table_row__14",
             },
             Object {
               "age": 7,
@@ -1571,6 +1596,7 @@ exports[`Table unhoverable table should render correctly 1`] = `
               "id": 5,
               "name": "Max",
               "type": "dog",
+              "uuid": "table_row__15",
             },
           ]
         }
@@ -1796,6 +1822,7 @@ exports[`Table with default settings should render correctly 1`] = `
               "id": 1,
               "name": "Hana",
               "type": "dog",
+              "uuid": "table_row__1",
             },
             Object {
               "age": 8,
@@ -1804,6 +1831,7 @@ exports[`Table with default settings should render correctly 1`] = `
               "id": 2,
               "name": "Lucky",
               "type": "dog",
+              "uuid": "table_row__2",
             },
             Object {
               "age": 2,
@@ -1812,6 +1840,7 @@ exports[`Table with default settings should render correctly 1`] = `
               "id": 3,
               "name": "Ginger",
               "type": "cat",
+              "uuid": "table_row__3",
             },
             Object {
               "age": 3,
@@ -1820,6 +1849,7 @@ exports[`Table with default settings should render correctly 1`] = `
               "id": 4,
               "name": "Kiwi",
               "type": "rabbit",
+              "uuid": "table_row__4",
             },
             Object {
               "age": 7,
@@ -1828,6 +1858,7 @@ exports[`Table with default settings should render correctly 1`] = `
               "id": 5,
               "name": "Max",
               "type": "dog",
+              "uuid": "table_row__5",
             },
           ]
         }
@@ -1841,36 +1872,36 @@ exports[`Table with default settings should render correctly 1`] = `
         <tbody
           style={
             Object {
-              "maxHight": null,
+              "height": null,
             }
           }
         >
           <tr
-            key="table-header-row-0"
+            key="table_row__1"
           >
             <td
-              key="table-header-cell-0-0"
+              key="table_cell__0"
               width={300}
             >
               Hana
             </td>
             <td
-              key="table-header-cell-0-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-0-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-0-3"
+              key="table_cell__3"
             >
               4
             </td>
             <td
-              key="table-header-cell-0-4"
+              key="table_cell__4"
             >
               <span
                 style={
@@ -1884,31 +1915,31 @@ exports[`Table with default settings should render correctly 1`] = `
             </td>
           </tr>
           <tr
-            key="table-header-row-1"
+            key="table_row__2"
           >
             <td
-              key="table-header-cell-1-0"
+              key="table_cell__0"
               width={300}
             >
               Lucky
             </td>
             <td
-              key="table-header-cell-1-1"
+              key="table_cell__1"
             >
               male
             </td>
             <td
-              key="table-header-cell-1-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-1-3"
+              key="table_cell__3"
             >
               8
             </td>
             <td
-              key="table-header-cell-1-4"
+              key="table_cell__4"
             >
               <span
                 style={
@@ -1922,31 +1953,31 @@ exports[`Table with default settings should render correctly 1`] = `
             </td>
           </tr>
           <tr
-            key="table-header-row-2"
+            key="table_row__3"
           >
             <td
-              key="table-header-cell-2-0"
+              key="table_cell__0"
               width={300}
             >
               Ginger
             </td>
             <td
-              key="table-header-cell-2-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-2-2"
+              key="table_cell__2"
             >
               cat
             </td>
             <td
-              key="table-header-cell-2-3"
+              key="table_cell__3"
             >
               2
             </td>
             <td
-              key="table-header-cell-2-4"
+              key="table_cell__4"
             >
               <span
                 style={
@@ -1960,31 +1991,31 @@ exports[`Table with default settings should render correctly 1`] = `
             </td>
           </tr>
           <tr
-            key="table-header-row-3"
+            key="table_row__4"
           >
             <td
-              key="table-header-cell-3-0"
+              key="table_cell__0"
               width={300}
             >
               Kiwi
             </td>
             <td
-              key="table-header-cell-3-1"
+              key="table_cell__1"
             >
               male
             </td>
             <td
-              key="table-header-cell-3-2"
+              key="table_cell__2"
             >
               rabbit
             </td>
             <td
-              key="table-header-cell-3-3"
+              key="table_cell__3"
             >
               3
             </td>
             <td
-              key="table-header-cell-3-4"
+              key="table_cell__4"
             >
               <span
                 style={
@@ -1998,31 +2029,31 @@ exports[`Table with default settings should render correctly 1`] = `
             </td>
           </tr>
           <tr
-            key="table-header-row-4"
+            key="table_row__5"
           >
             <td
-              key="table-header-cell-4-0"
+              key="table_cell__0"
               width={300}
             >
               Max
             </td>
             <td
-              key="table-header-cell-4-1"
+              key="table_cell__1"
             >
               female
             </td>
             <td
-              key="table-header-cell-4-2"
+              key="table_cell__2"
             >
               dog
             </td>
             <td
-              key="table-header-cell-4-3"
+              key="table_cell__3"
             >
               7
             </td>
             <td
-              key="table-header-cell-4-4"
+              key="table_cell__4"
             >
               <span
                 style={

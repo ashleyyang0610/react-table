@@ -192,7 +192,7 @@ const currentPageData = data.slice(
 );
 
 <div>
-    <Table columns={columns} data={currentPageData} fixedHeader height={100} />
+    <Table columns={columns} data={currentPageData} fixedHeader height={150} />
     <div
         style={{
             display: 'flex',

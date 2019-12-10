@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
+import _uniqueId from 'lodash.uniqueid';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
 import TableContext from './context';
@@ -51,7 +52,7 @@ const Table = ({
 
     const headerColumns = columns.slice();
 
-    if (fixedHeader && tableBodyScrollStatus) {
+    if (fixedHeader) {
         const newColumn = {
             ...columns[columns.length - 1],
             width: columns.width
@@ -61,6 +62,13 @@ const Table = ({
 
         headerColumns.splice(columns.length - 1, 1, newColumn);
     }
+
+    const normalizedData = data.map(row => {
+        return {
+            ...row,
+            uuid: _uniqueId('table_row__')
+        };
+    });
 
     return (
         <TableContext.Provider value={context}>
@@ -80,7 +88,7 @@ const Table = ({
                     <TableHeader columns={headerColumns} />
                     <TableBody
                         columns={columns}
-                        data={data}
+                        data={normalizedData}
                         emptyRender={emptyRender}
                         fixedHeader={fixedHeader}
                         height={height}
