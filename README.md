@@ -107,3 +107,8 @@ The examples for the component is located under `/docs`.
 | lastPageRenderer | Function              |() => 'Last'   | Content renderer in "last page" button.                   |
 | nextPageRenderer | Function              |() => 'Next'   | Content renderer in "next page" button.                   |
 | prevPageRenderer | Function              |() => 'Prev'   | Content renderer in "prev page" button.                   |
+
+
+#### Todo items
+
+1. The unit test for react ref.
