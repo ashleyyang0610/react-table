@@ -28,7 +28,6 @@
   display: block;
 }
 .table--fixed-header---24bQL tbody {
-  max-height: 100px;
   overflow-y: auto;
 }
 .table--fixed-header---24bQL tr {
