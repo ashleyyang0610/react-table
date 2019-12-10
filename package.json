@@ -1,97 +1,129 @@
 {
-  "name": "react-table",
-  "version": "0.1.0",
-  "description": "React Table",
-  "main": "lib/index.js",
-  "files": [
-    "dist",
-    "lib"
-  ],
-  "scripts": {
-    "prepare": "npm run lint && npm test && npm run clean && npm run build && npm run styleguide:build",
-    "build": "webpack-cli && npm run cleancss",
-    "clean": "rm -f {lib,dist}/*",
-    "cleancss": "cleancss -o dist/react-table.min.css dist/react-table.css",
-    "demo": "http-server -p 8000 docs/",
-    "lint": "npm run eslint && npm run stylint",
-    "eslint": "eslint --ext .js --ext .jsx *.js src test",
-    "stylint": "stylint src",
-    "test": "tap test/*.js --node-arg=--require --node-arg=@babel/register --node-arg=--require --node-arg=@babel/polyfill",
-    "coveralls": "tap test/*.js --coverage --coverage-report=text-lcov --nyc-arg=--require --nyc-arg=@babel/register --nyc-arg=--require --nyc-arg=@babel/polyfill | coveralls",
-    "dev": "npm run styleguide",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "ashley_yang <ashley.yang0610@gmail.com>",
-  "contributors": [
-    {
-      "name": "ashley_yang",
-      "email": "ashley.yang0610@gmail.com"
+    "name": "react-table",
+    "version": "0.1.0",
+    "description": "React Table",
+    "main": "lib/index.js",
+    "files": [
+        "dist",
+        "lib"
+    ],
+    "scripts": {
+        "prepare": "npm run lint && npm test && npm run clean && npm run build && npm run styleguide:build",
+        "build": "webpack-cli && npm run cleancss",
+        "clean": "rm -f {lib,dist}/*",
+        "cleancss": "cleancss -o dist/react-table.min.css dist/react-table.css",
+        "demo": "http-server -p 8000 docs/",
+        "lint": "npm run eslint && npm run stylint",
+        "eslint": "eslint --ext .js --ext .jsx *.js src test",
+        "stylint": "stylint src",
+        "test": "jest --coverage",
+        "dev": "npm run styleguide",
+        "styleguide": "styleguidist server",
+        "styleguide:build": "styleguidist build"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "ashley_yang <ashley.yang0610@gmail.com>",
+    "contributors": [
+        {
+            "name": "ashley_yang",
+            "email": "ashley.yang0610@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "keywords": [
+        "react",
+        "react-table"
+    ],
+    "peerDependencies": {
+        "react": ">=15.0.0"
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "lodash.get": "^4.4.2",
+        "prop-types": "^15.6.0",
+        "react": "~16.8.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "~7.5.5",
+        "@babel/core": "~7.5.5",
+        "@babel/polyfill": "~7.4.4",
+        "@babel/preset-env": "~7.5.5",
+        "@babel/preset-react": "~7.0.0",
+        "@babel/register": "~7.5.5",
+        "babel-eslint": "~10.0.2",
+        "babel-jest": "^24.9.0",
+        "babel-loader": "~8.0.6",
+        "clean-css": "~4.2.1",
+        "clean-css-cli": "~4.3.0",
+        "cross-env": "~5.2.0",
+        "css-loader": "~3.1.0",
+        "enzyme": "~3.10.0",
+        "enzyme-adapter-react-16": "~1.14.0",
+        "enzyme-to-json": "^3.4.3",
+        "eslint": "~6.0.1",
+        "eslint-loader": "~2.2.1",
+        "eslint-plugin-import": "~2.18.1",
+        "eslint-plugin-jsx-a11y": "~6.2.3",
+        "eslint-plugin-react": "~7.14.2",
+        "extract-text-webpack-plugin": "~3.0.2",
+        "file-loader": "~4.1.0",
+        "find-imports": "~1.1.0",
+        "html-webpack-plugin": "~3.2.0",
+        "http-server": "~0.11.1",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^24.9.0",
+        "jsdom": "~15.1.1",
+        "mini-css-extract-plugin": "~0.8.0",
+        "react-dom": "~16.8.0",
+        "react-github-corner": "~2.3.0",
+        "react-styleguidist": "~9.1.11",
+        "style-loader": "~0.23.1",
+        "styled-components": "~4.3.2",
+        "stylint": "~2.0.0",
+        "stylus": "~0.54.5",
+        "stylus-loader": "~3.0.2",
+        "url-loader": "~2.1.0",
+        "webpack": "~4.36.1",
+        "webpack-cli": "~3.3.6",
+        "webpack-dev-server": "~3.7.2"
+    },
+    "jest": {
+        "globals": {
+            "NODE_ENV": "test"
+        },
+        "setupFiles": [
+            "./setupTests.js"
+        ],
+        "testURL": "http://localhost",
+        "modulePaths": [
+            "./src"
+        ],
+        "moduleNameMapper": {
+            "\\.(css|less|sass|scss|styl)$": "identity-obj-proxy"
+        },
+        "transform": {
+            "^.+\\.js$": "babel-jest",
+            "^.+\\.jsx?$": "babel-jest",
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/utils/fileTransformer.js"
+        },
+        "coverageReporters": [
+            "lcov"
+        ],
+        "collectCoverageFrom": [
+            "<rootDir>/src/**/*.{js,jsx}"
+        ],
+        "testMatch": [
+            "<rootDir>/test/?(*.)(spec|test).js?(x)"
+        ],
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ]
     }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
-  "keywords": [
-    "react",
-    "react-table"
-  ],
-  "peerDependencies": {
-    "react": ">=15.0.0"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "jest": "^24.9.0",
-    "lodash": "^4.17.15",
-    "prop-types": "^15.6.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "~7.5.5",
-    "@babel/core": "~7.5.5",
-    "@babel/polyfill": "~7.4.4",
-    "@babel/preset-env": "~7.5.5",
-    "@babel/preset-react": "~7.0.0",
-    "@babel/register": "~7.5.5",
-    "babel-eslint": "~10.0.2",
-    "babel-loader": "~8.0.6",
-    "clean-css": "~4.2.1",
-    "clean-css-cli": "~4.3.0",
-    "coveralls": "~3.0.5",
-    "cross-env": "~5.2.0",
-    "css-loader": "~3.1.0",
-    "enzyme": "~3.10.0",
-    "enzyme-adapter-react-16": "~1.14.0",
-    "eslint": "~6.0.1",
-    "eslint-loader": "~2.2.1",
-    "eslint-plugin-import": "~2.18.1",
-    "eslint-plugin-jsx-a11y": "~6.2.3",
-    "eslint-plugin-react": "~7.14.2",
-    "extract-text-webpack-plugin": "~3.0.2",
-    "file-loader": "~4.1.0",
-    "find-imports": "~1.1.0",
-    "html-webpack-plugin": "~3.2.0",
-    "http-server": "~0.11.1",
-    "jsdom": "~15.1.1",
-    "mini-css-extract-plugin": "~0.8.0",
-    "react": "~16.8.0",
-    "react-dom": "~16.8.0",
-    "react-github-corner": "~2.3.0",
-    "react-styleguidist": "~9.1.11",
-    "style-loader": "~0.23.1",
-    "styled-components": "~4.3.2",
-    "stylint": "~2.0.0",
-    "stylus": "~0.54.5",
-    "stylus-loader": "~3.0.2",
-    "tap": "~14.4.2",
-    "url-loader": "~2.1.0",
-    "webpack": "~4.36.1",
-    "webpack-cli": "~3.3.6",
-    "webpack-dev-server": "~3.7.2"
-  }
 }

@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination with default settings onPageChange props should be triggered and the page value should be updated when "first" button is click 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    disabled={true}
+    key="first-page"
+    onClick={[Function]}
+    type="button"
+  >
+    First
+  </button>
+  <button
+    disabled={true}
+    key="prev-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Prev
+  </button>
+  <button
+    disabled={false}
+    key="next-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+  <button
+    disabled={false}
+    key="last-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Last
+  </button>
+</div>
+`;
+
+exports[`Pagination with default settings onPageChange props should be triggered and the page value should be updated when "last" button is click 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    disabled={true}
+    key="first-page"
+    onClick={[Function]}
+    type="button"
+  >
+    First
+  </button>
+  <button
+    disabled={true}
+    key="prev-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Prev
+  </button>
+  <button
+    disabled={false}
+    key="next-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+  <button
+    disabled={false}
+    key="last-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Last
+  </button>
+</div>
+`;
+
+exports[`Pagination with default settings onPageChange props should be triggered and the page value should be updated when "next" button is click 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    disabled={true}
+    key="first-page"
+    onClick={[Function]}
+    type="button"
+  >
+    First
+  </button>
+  <button
+    disabled={true}
+    key="prev-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Prev
+  </button>
+  <button
+    disabled={false}
+    key="next-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+  <button
+    disabled={false}
+    key="last-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Last
+  </button>
+</div>
+`;
+
+exports[`Pagination with default settings onPageChange props should be triggered and the page value should be updated when "prev" button is click 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    disabled={true}
+    key="first-page"
+    onClick={[Function]}
+    type="button"
+  >
+    First
+  </button>
+  <button
+    disabled={true}
+    key="prev-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Prev
+  </button>
+  <button
+    disabled={false}
+    key="next-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+  <button
+    disabled={false}
+    key="last-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Last
+  </button>
+</div>
+`;
+
+exports[`Pagination with default settings should render correctly 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    disabled={true}
+    key="first-page"
+    onClick={[Function]}
+    type="button"
+  >
+    First
+  </button>
+  <button
+    disabled={true}
+    key="prev-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Prev
+  </button>
+  <button
+    disabled={false}
+    key="next-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Next
+  </button>
+  <button
+    disabled={false}
+    key="last-page"
+    onClick={[Function]}
+    type="button"
+  >
+    Last
+  </button>
+</div>
+`;

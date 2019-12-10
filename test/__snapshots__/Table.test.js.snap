@@ -1,0 +1,2043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table fixed table height should render correctly 1`] = `
+<Table
+  columns={
+    Array [
+      Object {
+        "dataKey": "name",
+        "title": "Name",
+        "width": 300,
+      },
+      Object {
+        "dataKey": "gender",
+        "title": "Gender",
+      },
+      Object {
+        "dataKey": "type",
+        "title": "Type",
+      },
+      Object {
+        "dataKey": "age",
+        "title": "Age",
+      },
+      Object {
+        "dataKey": "color",
+        "title": "Color",
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "age": 4,
+        "color": "black",
+        "gender": "female",
+        "id": 1,
+        "name": "Hana",
+        "type": "dog",
+      },
+      Object {
+        "age": 8,
+        "color": "white",
+        "gender": "male",
+        "id": 2,
+        "name": "Lucky",
+        "type": "dog",
+      },
+      Object {
+        "age": 2,
+        "color": "orange",
+        "gender": "female",
+        "id": 3,
+        "name": "Ginger",
+        "type": "cat",
+      },
+      Object {
+        "age": 3,
+        "color": "gray",
+        "gender": "male",
+        "id": 4,
+        "name": "Kiwi",
+        "type": "rabbit",
+      },
+      Object {
+        "age": 7,
+        "color": "brown",
+        "gender": "female",
+        "id": 5,
+        "name": "Max",
+        "type": "dog",
+      },
+    ]
+  }
+  emptyRender={[Function]}
+  fixedHeader={false}
+  height={150}
+  hoverable={true}
+  loading={false}
+  theme="light"
+>
+  <TableWrapper
+    height={150}
+    showWrapper={true}
+  >
+    <div
+      style={
+        Object {
+          "height": "150px",
+          "overflowY": "auto",
+        }
+      }
+    >
+      <table
+        className="table table--light table--hoverable undefined"
+        width="100%"
+      >
+        <TableHeader
+          columns={
+            Array [
+              Object {
+                "dataKey": "name",
+                "title": "Name",
+                "width": 300,
+              },
+              Object {
+                "dataKey": "gender",
+                "title": "Gender",
+              },
+              Object {
+                "dataKey": "type",
+                "title": "Type",
+              },
+              Object {
+                "dataKey": "age",
+                "title": "Age",
+              },
+              Object {
+                "dataKey": "color",
+                "title": "Color",
+              },
+            ]
+          }
+        >
+          <thead>
+            <tr>
+              <th
+                key="table-header-cell-0"
+                style={
+                  Object {
+                    "width": "300px",
+                  }
+                }
+              >
+                Name
+              </th>
+              <th
+                key="table-header-cell-1"
+                style={
+                  Object {
+                    "width": "undefinedpx",
+                  }
+                }
+              >
+                Gender
+              </th>
+              <th
+                key="table-header-cell-2"
+                style={
+                  Object {
+                    "width": "undefinedpx",
+                  }
+                }
+              >
+                Type
+              </th>
+              <th
+                key="table-header-cell-3"
+                style={
+                  Object {
+                    "width": "undefinedpx",
+                  }
+                }
+              >
+                Age
+              </th>
+              <th
+                key="table-header-cell-4"
+                style={
+                  Object {
+                    "width": "undefinedpx",
+                  }
+                }
+              >
+                Color
+              </th>
+            </tr>
+          </thead>
+        </TableHeader>
+        <TableBody
+          columns={
+            Array [
+              Object {
+                "dataKey": "name",
+                "title": "Name",
+                "width": 300,
+              },
+              Object {
+                "dataKey": "gender",
+                "title": "Gender",
+              },
+              Object {
+                "dataKey": "type",
+                "title": "Type",
+              },
+              Object {
+                "dataKey": "age",
+                "title": "Age",
+              },
+              Object {
+                "dataKey": "color",
+                "title": "Color",
+              },
+            ]
+          }
+          data={
+            Array [
+              Object {
+                "age": 4,
+                "color": "black",
+                "gender": "female",
+                "id": 1,
+                "name": "Hana",
+                "type": "dog",
+              },
+              Object {
+                "age": 8,
+                "color": "white",
+                "gender": "male",
+                "id": 2,
+                "name": "Lucky",
+                "type": "dog",
+              },
+              Object {
+                "age": 2,
+                "color": "orange",
+                "gender": "female",
+                "id": 3,
+                "name": "Ginger",
+                "type": "cat",
+              },
+              Object {
+                "age": 3,
+                "color": "gray",
+                "gender": "male",
+                "id": 4,
+                "name": "Kiwi",
+                "type": "rabbit",
+              },
+              Object {
+                "age": 7,
+                "color": "brown",
+                "gender": "female",
+                "id": 5,
+                "name": "Max",
+                "type": "dog",
+              },
+            ]
+          }
+          emptyRender={[Function]}
+          fixedHeader={false}
+          height={150}
+          loading={false}
+          setLastTdWidth={[Function]}
+          setTableBodyScrollStatus={[Function]}
+          setTableScrollbarWidth={[Function]}
+        >
+          <tbody
+            style={
+              Object {
+                "maxHight": null,
+              }
+            }
+          >
+            <tr
+              key="table-header-row-0"
+            >
+              <td
+                key="table-header-cell-0-0"
+                width={300}
+              >
+                Hana
+              </td>
+              <td
+                key="table-header-cell-0-1"
+              >
+                female
+              </td>
+              <td
+                key="table-header-cell-0-2"
+              >
+                dog
+              </td>
+              <td
+                key="table-header-cell-0-3"
+              >
+                4
+              </td>
+              <td
+                key="table-header-cell-0-4"
+              >
+                black
+              </td>
+            </tr>
+            <tr
+              key="table-header-row-1"
+            >
+              <td
+                key="table-header-cell-1-0"
+                width={300}
+              >
+                Lucky
+              </td>
+              <td
+                key="table-header-cell-1-1"
+              >
+                male
+              </td>
+              <td
+                key="table-header-cell-1-2"
+              >
+                dog
+              </td>
+              <td
+                key="table-header-cell-1-3"
+              >
+                8
+              </td>
+              <td
+                key="table-header-cell-1-4"
+              >
+                white
+              </td>
+            </tr>
+            <tr
+              key="table-header-row-2"
+            >
+              <td
+                key="table-header-cell-2-0"
+                width={300}
+              >
+                Ginger
+              </td>
+              <td
+                key="table-header-cell-2-1"
+              >
+                female
+              </td>
+              <td
+                key="table-header-cell-2-2"
+              >
+                cat
+              </td>
+              <td
+                key="table-header-cell-2-3"
+              >
+                2
+              </td>
+              <td
+                key="table-header-cell-2-4"
+              >
+                orange
+              </td>
+            </tr>
+            <tr
+              key="table-header-row-3"
+            >
+              <td
+                key="table-header-cell-3-0"
+                width={300}
+              >
+                Kiwi
+              </td>
+              <td
+                key="table-header-cell-3-1"
+              >
+                male
+              </td>
+              <td
+                key="table-header-cell-3-2"
+              >
+                rabbit
+              </td>
+              <td
+                key="table-header-cell-3-3"
+              >
+                3
+              </td>
+              <td
+                key="table-header-cell-3-4"
+              >
+                gray
+              </td>
+            </tr>
+            <tr
+              key="table-header-row-4"
+            >
+              <td
+                key="table-header-cell-4-0"
+                width={300}
+              >
+                Max
+              </td>
+              <td
+                key="table-header-cell-4-1"
+              >
+                female
+              </td>
+              <td
+                key="table-header-cell-4-2"
+              >
+                dog
+              </td>
+              <td
+                key="table-header-cell-4-3"
+              >
+                7
+              </td>
+              <td
+                key="table-header-cell-4-4"
+              >
+                brown
+              </td>
+            </tr>
+          </tbody>
+        </TableBody>
+      </table>
+    </div>
+  </TableWrapper>
+</Table>
+`;
+
+exports[`Table fixed table width should render correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "theme": "light",
+    }
+  }
+>
+  <TableWrapper>
+    <table
+      className="table table--light table--hoverable undefined"
+      width="400px"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+      />
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "age": 4,
+              "color": "black",
+              "gender": "female",
+              "id": 1,
+              "name": "Hana",
+              "type": "dog",
+            },
+            Object {
+              "age": 8,
+              "color": "white",
+              "gender": "male",
+              "id": 2,
+              "name": "Lucky",
+              "type": "dog",
+            },
+            Object {
+              "age": 2,
+              "color": "orange",
+              "gender": "female",
+              "id": 3,
+              "name": "Ginger",
+              "type": "cat",
+            },
+            Object {
+              "age": 3,
+              "color": "gray",
+              "gender": "male",
+              "id": 4,
+              "name": "Kiwi",
+              "type": "rabbit",
+            },
+            Object {
+              "age": 7,
+              "color": "brown",
+              "gender": "female",
+              "id": 5,
+              "name": "Max",
+              "type": "dog",
+            },
+          ]
+        }
+        emptyRender={[Function]}
+        fixedHeader={false}
+        loading={false}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      />
+    </table>
+  </TableWrapper>
+</ContextProvider>
+`;
+
+exports[`Table fixedHeader table should render correctly 1`] = `
+<Table
+  columns={
+    Array [
+      Object {
+        "dataKey": "name",
+        "title": "Name",
+        "width": 300,
+      },
+      Object {
+        "dataKey": "gender",
+        "title": "Gender",
+      },
+      Object {
+        "dataKey": "type",
+        "title": "Type",
+      },
+      Object {
+        "dataKey": "age",
+        "title": "Age",
+      },
+      Object {
+        "dataKey": "color",
+        "title": "Color",
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "age": 4,
+        "color": "black",
+        "gender": "female",
+        "id": 1,
+        "name": "Hana",
+        "type": "dog",
+      },
+      Object {
+        "age": 8,
+        "color": "white",
+        "gender": "male",
+        "id": 2,
+        "name": "Lucky",
+        "type": "dog",
+      },
+      Object {
+        "age": 2,
+        "color": "orange",
+        "gender": "female",
+        "id": 3,
+        "name": "Ginger",
+        "type": "cat",
+      },
+      Object {
+        "age": 3,
+        "color": "gray",
+        "gender": "male",
+        "id": 4,
+        "name": "Kiwi",
+        "type": "rabbit",
+      },
+      Object {
+        "age": 7,
+        "color": "brown",
+        "gender": "female",
+        "id": 5,
+        "name": "Max",
+        "type": "dog",
+      },
+    ]
+  }
+  emptyRender={[Function]}
+  fixedHeader={true}
+  height={100}
+  hoverable={true}
+  loading={false}
+  theme="light"
+>
+  <TableWrapper
+    height={100}
+    showWrapper={false}
+  >
+    <table
+      className="table table--light table--fixed-header table--hoverable undefined"
+      width="100%"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr>
+            <th
+              key="table-header-cell-0"
+              style={
+                Object {
+                  "width": "300px",
+                }
+              }
+            >
+              Name
+            </th>
+            <th
+              key="table-header-cell-1"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Gender
+            </th>
+            <th
+              key="table-header-cell-2"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Type
+            </th>
+            <th
+              key="table-header-cell-3"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Age
+            </th>
+            <th
+              key="table-header-cell-4"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Color
+            </th>
+          </tr>
+        </thead>
+      </TableHeader>
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "age": 4,
+              "color": "black",
+              "gender": "female",
+              "id": 1,
+              "name": "Hana",
+              "type": "dog",
+            },
+            Object {
+              "age": 8,
+              "color": "white",
+              "gender": "male",
+              "id": 2,
+              "name": "Lucky",
+              "type": "dog",
+            },
+            Object {
+              "age": 2,
+              "color": "orange",
+              "gender": "female",
+              "id": 3,
+              "name": "Ginger",
+              "type": "cat",
+            },
+            Object {
+              "age": 3,
+              "color": "gray",
+              "gender": "male",
+              "id": 4,
+              "name": "Kiwi",
+              "type": "rabbit",
+            },
+            Object {
+              "age": 7,
+              "color": "brown",
+              "gender": "female",
+              "id": 5,
+              "name": "Max",
+              "type": "dog",
+            },
+          ]
+        }
+        emptyRender={[Function]}
+        fixedHeader={true}
+        height={100}
+        loading={false}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      >
+        <tbody
+          style={
+            Object {
+              "maxHight": "76px",
+            }
+          }
+        >
+          <tr
+            key="table-header-row-0"
+          >
+            <td
+              key="table-header-cell-0-0"
+              width={300}
+            >
+              Hana
+            </td>
+            <td
+              key="table-header-cell-0-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-0-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-0-3"
+            >
+              4
+            </td>
+            <td
+              key="table-header-cell-0-4"
+            >
+              black
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-1"
+          >
+            <td
+              key="table-header-cell-1-0"
+              width={300}
+            >
+              Lucky
+            </td>
+            <td
+              key="table-header-cell-1-1"
+            >
+              male
+            </td>
+            <td
+              key="table-header-cell-1-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-1-3"
+            >
+              8
+            </td>
+            <td
+              key="table-header-cell-1-4"
+            >
+              white
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-2"
+          >
+            <td
+              key="table-header-cell-2-0"
+              width={300}
+            >
+              Ginger
+            </td>
+            <td
+              key="table-header-cell-2-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-2-2"
+            >
+              cat
+            </td>
+            <td
+              key="table-header-cell-2-3"
+            >
+              2
+            </td>
+            <td
+              key="table-header-cell-2-4"
+            >
+              orange
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-3"
+          >
+            <td
+              key="table-header-cell-3-0"
+              width={300}
+            >
+              Kiwi
+            </td>
+            <td
+              key="table-header-cell-3-1"
+            >
+              male
+            </td>
+            <td
+              key="table-header-cell-3-2"
+            >
+              rabbit
+            </td>
+            <td
+              key="table-header-cell-3-3"
+            >
+              3
+            </td>
+            <td
+              key="table-header-cell-3-4"
+            >
+              gray
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-4"
+          >
+            <td
+              key="table-header-cell-4-0"
+              width={300}
+            >
+              Max
+            </td>
+            <td
+              key="table-header-cell-4-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-4-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-4-3"
+            >
+              7
+            </td>
+            <td
+              key="table-header-cell-4-4"
+            >
+              brown
+            </td>
+          </tr>
+        </tbody>
+      </TableBody>
+    </table>
+  </TableWrapper>
+</Table>
+`;
+
+exports[`Table test empty data dsiplay should render correctly 1`] = `
+<Table
+  columns={
+    Array [
+      Object {
+        "dataKey": "name",
+        "title": "Name",
+        "width": 300,
+      },
+      Object {
+        "dataKey": "gender",
+        "title": "Gender",
+      },
+      Object {
+        "dataKey": "type",
+        "title": "Type",
+      },
+      Object {
+        "dataKey": "age",
+        "title": "Age",
+      },
+      Object {
+        "dataKey": "color",
+        "title": "Color",
+      },
+    ]
+  }
+  data={Array []}
+  emptyRender={[Function]}
+  fixedHeader={false}
+  hoverable={true}
+  loading={false}
+  theme="light"
+>
+  <TableWrapper>
+    <table
+      className="table table--light table--empty table--hoverable undefined"
+      width="100%"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr>
+            <th
+              key="table-header-cell-0"
+              style={
+                Object {
+                  "width": "300px",
+                }
+              }
+            >
+              Name
+            </th>
+            <th
+              key="table-header-cell-1"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Gender
+            </th>
+            <th
+              key="table-header-cell-2"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Type
+            </th>
+            <th
+              key="table-header-cell-3"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Age
+            </th>
+            <th
+              key="table-header-cell-4"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Color
+            </th>
+          </tr>
+        </thead>
+      </TableHeader>
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+        data={Array []}
+        emptyRender={[Function]}
+        fixedHeader={false}
+        loading={false}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      >
+        <tbody
+          style={
+            Object {
+              "maxHight": null,
+            }
+          }
+        >
+          <tr>
+            <td
+              colSpan={5}
+            >
+              No data
+            </td>
+          </tr>
+        </tbody>
+      </TableBody>
+    </table>
+  </TableWrapper>
+</Table>
+`;
+
+exports[`Table test loading status should render correctly 1`] = `
+<Table
+  columns={
+    Array [
+      Object {
+        "dataKey": "name",
+        "title": "Name",
+        "width": 300,
+      },
+      Object {
+        "dataKey": "gender",
+        "title": "Gender",
+      },
+      Object {
+        "dataKey": "type",
+        "title": "Type",
+      },
+      Object {
+        "dataKey": "age",
+        "title": "Age",
+      },
+      Object {
+        "dataKey": "color",
+        "title": "Color",
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "age": 4,
+        "color": "black",
+        "gender": "female",
+        "id": 1,
+        "name": "Hana",
+        "type": "dog",
+      },
+      Object {
+        "age": 8,
+        "color": "white",
+        "gender": "male",
+        "id": 2,
+        "name": "Lucky",
+        "type": "dog",
+      },
+      Object {
+        "age": 2,
+        "color": "orange",
+        "gender": "female",
+        "id": 3,
+        "name": "Ginger",
+        "type": "cat",
+      },
+      Object {
+        "age": 3,
+        "color": "gray",
+        "gender": "male",
+        "id": 4,
+        "name": "Kiwi",
+        "type": "rabbit",
+      },
+      Object {
+        "age": 7,
+        "color": "brown",
+        "gender": "female",
+        "id": 5,
+        "name": "Max",
+        "type": "dog",
+      },
+    ]
+  }
+  emptyRender={[Function]}
+  fixedHeader={false}
+  hoverable={true}
+  loading={true}
+  theme="light"
+>
+  <TableWrapper>
+    <table
+      className="table table--light table--hoverable table--loading undefined"
+      width="100%"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr>
+            <th
+              key="table-header-cell-0"
+              style={
+                Object {
+                  "width": "300px",
+                }
+              }
+            >
+              Name
+            </th>
+            <th
+              key="table-header-cell-1"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Gender
+            </th>
+            <th
+              key="table-header-cell-2"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Type
+            </th>
+            <th
+              key="table-header-cell-3"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Age
+            </th>
+            <th
+              key="table-header-cell-4"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Color
+            </th>
+          </tr>
+        </thead>
+      </TableHeader>
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "age": 4,
+              "color": "black",
+              "gender": "female",
+              "id": 1,
+              "name": "Hana",
+              "type": "dog",
+            },
+            Object {
+              "age": 8,
+              "color": "white",
+              "gender": "male",
+              "id": 2,
+              "name": "Lucky",
+              "type": "dog",
+            },
+            Object {
+              "age": 2,
+              "color": "orange",
+              "gender": "female",
+              "id": 3,
+              "name": "Ginger",
+              "type": "cat",
+            },
+            Object {
+              "age": 3,
+              "color": "gray",
+              "gender": "male",
+              "id": 4,
+              "name": "Kiwi",
+              "type": "rabbit",
+            },
+            Object {
+              "age": 7,
+              "color": "brown",
+              "gender": "female",
+              "id": 5,
+              "name": "Max",
+              "type": "dog",
+            },
+          ]
+        }
+        emptyRender={[Function]}
+        fixedHeader={false}
+        loading={true}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      >
+        <tbody
+          style={
+            Object {
+              "maxHight": null,
+            }
+          }
+        >
+          <tr>
+            <td
+              colSpan={5}
+            >
+              <Loader
+                className="position-middle-content"
+              >
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "iqLNLg",
+                          "rules": Array [
+                            "
+    margin: 60px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-left: 2px solid #555;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+
+    &,
+    &:after {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+    @-webkit-keyframes load8 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes load8 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="sc-bdVaJa iqLNLg"
+                    />
+                  </StyledComponent>
+                </styled.div>
+              </Loader>
+            </td>
+          </tr>
+        </tbody>
+      </TableBody>
+    </table>
+  </TableWrapper>
+</Table>
+`;
+
+exports[`Table unhoverable table should render correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "theme": "light",
+    }
+  }
+>
+  <TableWrapper>
+    <table
+      className="table table--light undefined"
+      width="100%"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+      />
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "title": "Color",
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "age": 4,
+              "color": "black",
+              "gender": "female",
+              "id": 1,
+              "name": "Hana",
+              "type": "dog",
+            },
+            Object {
+              "age": 8,
+              "color": "white",
+              "gender": "male",
+              "id": 2,
+              "name": "Lucky",
+              "type": "dog",
+            },
+            Object {
+              "age": 2,
+              "color": "orange",
+              "gender": "female",
+              "id": 3,
+              "name": "Ginger",
+              "type": "cat",
+            },
+            Object {
+              "age": 3,
+              "color": "gray",
+              "gender": "male",
+              "id": 4,
+              "name": "Kiwi",
+              "type": "rabbit",
+            },
+            Object {
+              "age": 7,
+              "color": "brown",
+              "gender": "female",
+              "id": 5,
+              "name": "Max",
+              "type": "dog",
+            },
+          ]
+        }
+        emptyRender={[Function]}
+        fixedHeader={false}
+        loading={false}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      />
+    </table>
+  </TableWrapper>
+</ContextProvider>
+`;
+
+exports[`Table with default settings should render correctly 1`] = `
+<Table
+  columns={
+    Array [
+      Object {
+        "dataKey": "name",
+        "title": "Name",
+        "width": 300,
+      },
+      Object {
+        "dataKey": "gender",
+        "title": "Gender",
+      },
+      Object {
+        "dataKey": "type",
+        "title": "Type",
+      },
+      Object {
+        "dataKey": "age",
+        "title": "Age",
+      },
+      Object {
+        "dataKey": "color",
+        "render": [Function],
+        "title": [Function],
+      },
+    ]
+  }
+  data={
+    Array [
+      Object {
+        "age": 4,
+        "color": "black",
+        "gender": "female",
+        "id": 1,
+        "name": "Hana",
+        "type": "dog",
+      },
+      Object {
+        "age": 8,
+        "color": "white",
+        "gender": "male",
+        "id": 2,
+        "name": "Lucky",
+        "type": "dog",
+      },
+      Object {
+        "age": 2,
+        "color": "orange",
+        "gender": "female",
+        "id": 3,
+        "name": "Ginger",
+        "type": "cat",
+      },
+      Object {
+        "age": 3,
+        "color": "gray",
+        "gender": "male",
+        "id": 4,
+        "name": "Kiwi",
+        "type": "rabbit",
+      },
+      Object {
+        "age": 7,
+        "color": "brown",
+        "gender": "female",
+        "id": 5,
+        "name": "Max",
+        "type": "dog",
+      },
+    ]
+  }
+  emptyRender={[Function]}
+  fixedHeader={false}
+  hoverable={true}
+  loading={false}
+  theme="light"
+>
+  <TableWrapper>
+    <table
+      className="table table--light table--hoverable undefined"
+      width="100%"
+    >
+      <TableHeader
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "render": [Function],
+              "title": [Function],
+            },
+          ]
+        }
+      >
+        <thead>
+          <tr>
+            <th
+              key="table-header-cell-0"
+              style={
+                Object {
+                  "width": "300px",
+                }
+              }
+            >
+              Name
+            </th>
+            <th
+              key="table-header-cell-1"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Gender
+            </th>
+            <th
+              key="table-header-cell-2"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Type
+            </th>
+            <th
+              key="table-header-cell-3"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              Age
+            </th>
+            <th
+              key="table-header-cell-4"
+              style={
+                Object {
+                  "width": "undefinedpx",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "red",
+                  }
+                }
+              >
+                color
+              </span>
+            </th>
+          </tr>
+        </thead>
+      </TableHeader>
+      <TableBody
+        columns={
+          Array [
+            Object {
+              "dataKey": "name",
+              "title": "Name",
+              "width": 300,
+            },
+            Object {
+              "dataKey": "gender",
+              "title": "Gender",
+            },
+            Object {
+              "dataKey": "type",
+              "title": "Type",
+            },
+            Object {
+              "dataKey": "age",
+              "title": "Age",
+            },
+            Object {
+              "dataKey": "color",
+              "render": [Function],
+              "title": [Function],
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "age": 4,
+              "color": "black",
+              "gender": "female",
+              "id": 1,
+              "name": "Hana",
+              "type": "dog",
+            },
+            Object {
+              "age": 8,
+              "color": "white",
+              "gender": "male",
+              "id": 2,
+              "name": "Lucky",
+              "type": "dog",
+            },
+            Object {
+              "age": 2,
+              "color": "orange",
+              "gender": "female",
+              "id": 3,
+              "name": "Ginger",
+              "type": "cat",
+            },
+            Object {
+              "age": 3,
+              "color": "gray",
+              "gender": "male",
+              "id": 4,
+              "name": "Kiwi",
+              "type": "rabbit",
+            },
+            Object {
+              "age": 7,
+              "color": "brown",
+              "gender": "female",
+              "id": 5,
+              "name": "Max",
+              "type": "dog",
+            },
+          ]
+        }
+        emptyRender={[Function]}
+        fixedHeader={false}
+        loading={false}
+        setLastTdWidth={[Function]}
+        setTableBodyScrollStatus={[Function]}
+        setTableScrollbarWidth={[Function]}
+      >
+        <tbody
+          style={
+            Object {
+              "maxHight": null,
+            }
+          }
+        >
+          <tr
+            key="table-header-row-0"
+          >
+            <td
+              key="table-header-cell-0-0"
+              width={300}
+            >
+              Hana
+            </td>
+            <td
+              key="table-header-cell-0-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-0-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-0-3"
+            >
+              4
+            </td>
+            <td
+              key="table-header-cell-0-4"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "black",
+                  }
+                }
+              >
+                black
+              </span>
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-1"
+          >
+            <td
+              key="table-header-cell-1-0"
+              width={300}
+            >
+              Lucky
+            </td>
+            <td
+              key="table-header-cell-1-1"
+            >
+              male
+            </td>
+            <td
+              key="table-header-cell-1-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-1-3"
+            >
+              8
+            </td>
+            <td
+              key="table-header-cell-1-4"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "white",
+                  }
+                }
+              >
+                white
+              </span>
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-2"
+          >
+            <td
+              key="table-header-cell-2-0"
+              width={300}
+            >
+              Ginger
+            </td>
+            <td
+              key="table-header-cell-2-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-2-2"
+            >
+              cat
+            </td>
+            <td
+              key="table-header-cell-2-3"
+            >
+              2
+            </td>
+            <td
+              key="table-header-cell-2-4"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "orange",
+                  }
+                }
+              >
+                orange
+              </span>
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-3"
+          >
+            <td
+              key="table-header-cell-3-0"
+              width={300}
+            >
+              Kiwi
+            </td>
+            <td
+              key="table-header-cell-3-1"
+            >
+              male
+            </td>
+            <td
+              key="table-header-cell-3-2"
+            >
+              rabbit
+            </td>
+            <td
+              key="table-header-cell-3-3"
+            >
+              3
+            </td>
+            <td
+              key="table-header-cell-3-4"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "gray",
+                  }
+                }
+              >
+                gray
+              </span>
+            </td>
+          </tr>
+          <tr
+            key="table-header-row-4"
+          >
+            <td
+              key="table-header-cell-4-0"
+              width={300}
+            >
+              Max
+            </td>
+            <td
+              key="table-header-cell-4-1"
+            >
+              female
+            </td>
+            <td
+              key="table-header-cell-4-2"
+            >
+              dog
+            </td>
+            <td
+              key="table-header-cell-4-3"
+            >
+              7
+            </td>
+            <td
+              key="table-header-cell-4-4"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "brown",
+                  }
+                }
+              >
+                brown
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </TableBody>
+    </table>
+  </TableWrapper>
+</Table>
+`;

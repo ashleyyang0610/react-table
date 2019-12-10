@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import _get from 'lodash/get';
+import _get from 'lodash.get';
 import Loader from './Loader';
-import styles from './index.styl';
+import styles from './styles/index.styl';
 
 const TableBody = ({
     columns,

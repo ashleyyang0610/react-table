@@ -5,7 +5,7 @@ import cx from 'classnames';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
 import TableContext from './context';
-import styles from './index.styl';
+import styles from './styles/index.styl';
 
 const TableWrapper = ({ children, showWrapper, height }) => {
     if (showWrapper) {
@@ -43,14 +43,13 @@ const Table = ({
     const [tableBodyScrollStatus, setTableBodyScrollStatus] = useState(false);
     const [scrollbarWidth, setTableScrollbarWidth] = useState(0);
     const [lastTdWidth, setLastTdWidth] = useState(0);
-    const headerColumns = columns.slice();
 
     const emptyTableClass = data.length === 0 ? styles['table--empty'] : '';
     const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
     const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
     const loadingTableClass = loading ? styles['table--loading'] : '';
 
-    const tableHeightStyles = height && !fixedHeader ? {} : {};
+    const headerColumns = columns.slice();
 
     if (fixedHeader && tableBodyScrollStatus) {
         const newColumn = {
@@ -69,7 +68,6 @@ const Table = ({
                 <table
                     {...props}
                     width={width ? `${width}px` : '100%'}
-                    style={tableHeightStyles}
                     className={`${cx(
                         styles.table,
                         styles[`table--${theme}`],
@@ -79,11 +77,7 @@ const Table = ({
                         loadingTableClass
                     )} ${className}`}
                 >
-                    <TableHeader
-                        columns={headerColumns}
-                        lastTdWidth={lastTdWidth}
-                        tableBodyScrollStatus={tableBodyScrollStatus}
-                    />
+                    <TableHeader columns={headerColumns} />
                     <TableBody
                         columns={columns}
                         data={data}

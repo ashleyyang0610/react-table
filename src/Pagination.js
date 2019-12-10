@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import styles from './index.styl';
+import styles from './styles/index.styl';
 
 const Pagination = ({
     className,
