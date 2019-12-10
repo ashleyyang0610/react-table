@@ -1,6 +1,6 @@
 import { test } from 'tap';
 import '../setupTests';
 
-test('noop', (t) => {
+test('noop', t => {
     t.end();
 });

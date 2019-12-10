@@ -43,7 +43,16 @@
     color: #808080;
 }
 
+.customize-theme--blue th,
+.customize-theme--blue td {
+    border-color: transparent;
+}
+
 .customize-theme--blue tbody tr:nth-child(even) {
     background-color: #f8f6ff;
+}
+
+.fixed-table-example th {
+    text-align: left;
 }
 

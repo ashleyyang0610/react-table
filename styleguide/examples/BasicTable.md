@@ -1,6 +1,10 @@
+See [table props usage](#table) for the details.
+
+See [pagination props usage](#pagination-1) for the details.
+
 ```jsx
 const columns = [
-    { title: 'Name', dataKey: 'name', width: '300px' },
+    { title: 'Name', dataKey: 'name', width: 300 },
     { title: 'Gender', dataKey: 'gender' },
     { title: 'Type', dataKey: 'type' },
     { title: 'Age', dataKey: 'age' },
@@ -50,5 +54,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table columns={columns} data={data} />;
 ```

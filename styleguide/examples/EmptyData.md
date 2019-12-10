@@ -13,5 +13,5 @@ const columns = [
 
 const data = [];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table columns={columns} data={data} />;
 ```

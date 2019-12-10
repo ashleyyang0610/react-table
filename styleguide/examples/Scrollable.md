@@ -54,5 +54,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} height={150} width="100%" />;
+<Table columns={columns} data={data} height={150} />;
 ```

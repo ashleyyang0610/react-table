@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
@@ -7,10 +7,22 @@ import TableBody from './TableBody';
 import TableContext from './context';
 import styles from './index.styl';
 
-const TableWrapper = styled.table`
-    table-layout: fixed;
-    border-collapse: collapse;
-`;
+const TableWrapper = ({ children, showWrapper, height }) => {
+    if (showWrapper) {
+        return (
+            <div
+                style={{
+                    height: `${height}px`,
+                    overflowY: 'auto'
+                }}
+            >
+                {children}
+            </div>
+        );
+    } else {
+        return <>{children}</>;
+    }
+};
 
 const Table = ({
     className,
@@ -28,55 +40,62 @@ const Table = ({
     const context = {
         theme
     };
+    const [tableBodyScrollStatus, setTableBodyScrollStatus] = useState(false);
+    const [scrollbarWidth, setTableScrollbarWidth] = useState(0);
+    const [lastTdWidth, setLastTdWidth] = useState(0);
+    const headerColumns = columns.slice();
 
     const emptyTableClass = data.length === 0 ? styles['table--empty'] : '';
     const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
     const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
     const loadingTableClass = loading ? styles['table--loading'] : '';
 
-    const tableHeightStyles = !fixedHeader
-        ? {
-              display: 'block',
-              height: `${height} -24px`,
-              overflowY: 'auto'
-          }
-        : {};
+    const tableHeightStyles = height && !fixedHeader ? {} : {};
 
-    console.log(
-        typeof cx(
-            styles.table,
-            styles[`table--${theme}`],
-            emptyTableClass,
-            fixedHeaderClass,
-            hoverableTableClass,
-            loadingTableClass
-        )
-    );
+    if (fixedHeader && tableBodyScrollStatus) {
+        const newColumn = {
+            ...columns[columns.length - 1],
+            width: columns.width
+                ? columns.width + scrollbarWidth
+                : lastTdWidth + scrollbarWidth
+        };
+
+        headerColumns.splice(columns.length - 1, 1, newColumn);
+    }
 
     return (
         <TableContext.Provider value={context}>
-            <TableWrapper
-                {...props}
-                width={width}
-                style={tableHeightStyles}
-                className={`${cx(
-                    styles.table,
-                    styles[`table--${theme}`],
-                    emptyTableClass,
-                    fixedHeaderClass,
-                    hoverableTableClass,
-                    loadingTableClass
-                )} ${className}`}
-            >
-                <TableHeader columns={columns} fixedHeader={fixedHeader} />
-                <TableBody
-                    columns={columns}
-                    data={data}
-                    emptyRender={emptyRender}
-                    fixedHeader={fixedHeader}
-                    height={height}
-                    loading={loading}
-                />
+            <TableWrapper height={height} showWrapper={height && !fixedHeader}>
+                <table
+                    {...props}
+                    width={width ? `${width}px` : '100%'}
+                    style={tableHeightStyles}
+                    className={`${cx(
+                        styles.table,
+                        styles[`table--${theme}`],
+                        emptyTableClass,
+                        fixedHeaderClass,
+                        hoverableTableClass,
+                        loadingTableClass
+                    )} ${className}`}
+                >
+                    <TableHeader
+                        columns={headerColumns}
+                        lastTdWidth={lastTdWidth}
+                        tableBodyScrollStatus={tableBodyScrollStatus}
+                    />
+                    <TableBody
+                        columns={columns}
+                        data={data}
+                        emptyRender={emptyRender}
+                        fixedHeader={fixedHeader}
+                        height={height}
+                        loading={loading}
+                        setLastTdWidth={setLastTdWidth}
+                        setTableBodyScrollStatus={setTableBodyScrollStatus}
+                        setTableScrollbarWidth={setTableScrollbarWidth}
+                    />
+                </table>
             </TableWrapper>
         </TableContext.Provider>
     );
@@ -126,7 +145,7 @@ Table.propTypes = {
     /**
      * The width of the table.
      */
-    width: PropTypes.string.isRequired
+    width: PropTypes.number
 };
 
 export default Table;

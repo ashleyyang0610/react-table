@@ -92,5 +92,5 @@ const sortableColumns = columns.map((column, index) => {
 
 const sortedData = _orderBy(data, [state.sortColumnKey], [state.sortOrder]);
 
-<Table columns={sortableColumns} data={sortedData} width="600px" />;
+<Table columns={sortableColumns} data={sortedData} width={600} />;
 ```

@@ -56,5 +56,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} theme="light" width="100%" />;
+<Table columns={columns} data={data} theme="light" />;
 ```

@@ -23,5 +23,5 @@ const emptyRender = () => {
     );
 };
 
-<Table columns={columns} data={data} emptyRender={emptyRender} width="100%" />;
+<Table columns={columns} data={data} emptyRender={emptyRender} />;
 ```

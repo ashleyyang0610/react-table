@@ -54,5 +54,5 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} hoverable width="100%" />;
+<Table columns={columns} data={data} hoverable />;
 ```

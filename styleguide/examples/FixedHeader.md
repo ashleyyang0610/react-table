@@ -1,5 +1,7 @@
 Set `fixedHeader` props true to make the table header fixed and the table body scrollable once the table height is greater than `height` props value.
 
+The table header cell width will also be adjust to align with table body cell after scrollbar shows.
+
 See [table props usage](#table) for the details.
 
 ```jsx
@@ -8,7 +10,7 @@ const columns = [
     { title: 'Gender', dataKey: 'gender' },
     { title: 'Type', dataKey: 'type' },
     { title: 'Age', dataKey: 'age' },
-    { title: 'Color', dataKey: 'color' }
+    { title: 'Color', dataKey: 'color', width: 400 }
 ];
 
 const data = [
@@ -54,5 +56,11 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} fixedHeader height={100} width="100%" />;
+<Table
+    className="fixed-table-example"
+    columns={columns}
+    data={data}
+    fixedHeader
+    height={100}
+/>;
 ```

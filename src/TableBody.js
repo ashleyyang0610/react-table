@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import _get from 'lodash/get';
@@ -12,11 +12,38 @@ const TableBody = ({
     fixedHeader,
     height,
     loading,
+    setLastTdWidth,
+    setTableBodyScrollStatus,
+    setTableScrollbarWidth,
     ...props
 }) => {
+    const tableBodyRef = useRef();
+    const lastTdRef = useRef();
+
+    useEffect(() => {
+        if (!!tableBodyRef && tableBodyRef.current) {
+            const tableBodyStatus =
+                tableBodyRef.current.offsetHeight <
+                tableBodyRef.current.scrollHeight;
+            const scrollbarWidth =
+                tableBodyRef.current.parentNode.clientWidth -
+                tableBodyRef.current.clientWidth;
+            setTableScrollbarWidth(scrollbarWidth);
+            setTableBodyScrollStatus(tableBodyStatus);
+
+            if (tableBodyStatus && !!lastTdRef && lastTdRef.current) {
+                setLastTdWidth(lastTdRef.current.getBoundingClientRect().width);
+            }
+        }
+    }, []);
+
     const showEmpty = data.length === 0;
+
     return (
-        <tbody style={{ maxHight: fixedHeader ? `${height - 24}px` : null }}>
+        <tbody
+            ref={tableBodyRef}
+            style={{ maxHight: fixedHeader ? `${height - 24}px` : null }}
+        >
             {loading && (
                 <tr>
                     <td colSpan={columns.length}>
@@ -46,7 +73,16 @@ const TableBody = ({
                                         ? column.render(cellVal, row, rowIndex)
                                         : cellVal;
                                 return (
-                                    <td key={cellKey} width={width}>
+                                    <td
+                                        ref={
+                                            rowIndex === data.length - 1 &&
+                                            cellIndex === columns.length - 1
+                                                ? lastTdRef
+                                                : undefined
+                                        }
+                                        key={cellKey}
+                                        width={width}
+                                    >
                                         {cell}
                                     </td>
                                 );
@@ -64,6 +100,9 @@ TableBody.propTypes = {
     emptyRender: PropTypes.func.isRequired,
     fixedHeader: PropTypes.bool.isRequired,
     height: PropTypes.number,
+    setLastTdWidth: PropTypes.func.isRequired,
+    setTableBodyScrollStatus: PropTypes.func.isRequired,
+    setTableScrollbarWidth: PropTypes.func.isRequired,
     loading: PropTypes.bool.isRequired
 };
 

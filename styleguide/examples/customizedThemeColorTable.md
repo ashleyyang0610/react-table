@@ -52,7 +52,7 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} width="100%" />;
+<Table columns={columns} data={data} />;
 ```
 
 ```css
@@ -122,7 +122,7 @@ const data = [
     }
 ];
 
-<Table columns={columns} data={data} theme="dark" width="100%" />;
+<Table columns={columns} data={data} theme="dark" />;
 ```
 
 ```css
@@ -199,10 +199,5 @@ const data = [
     }
 ];
 
-<Table
-    className="customize-theme--blue"
-    columns={columns}
-    data={data}
-    width="100%"
-/>;
+<Table className="customize-theme--blue" columns={columns} data={data} />;
 ```
