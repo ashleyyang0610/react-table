@@ -201,3 +201,29 @@ const data = [
 
 <Table className="customize-theme--blue" columns={columns} data={data} />;
 ```
+
+```css
+/* Customize theme style as belows */
+.customize-theme--blue {
+    /* Write your customized dark theme styles here */
+    background-color: #fff;
+    thead {
+        background-color: #6c7ae0;
+        color: #fff;
+    }
+    td {
+        color: #808080;
+    }
+    th,
+    td {
+        border-color: transparent;
+    }
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: #f8f6ff;
+            }
+        }
+    }
+}
+```
