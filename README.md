@@ -115,3 +115,4 @@ The examples for the component is located under `/docs`.
 2. Make the table header height adjustable.
 3. Make the node in pagination more flexible. Not only able to modify the content inside the button node, but also able to change whole node which able to be triggered onPageChange events.
 4. Implement useContext to leave the component extening flexibilty in the future.
+5. Make the loader component cusomizable.
