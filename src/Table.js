@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
@@ -41,34 +41,64 @@ const Table = ({
     const context = {
         theme
     };
-    const [tableBodyScrollStatus, setTableBodyScrollStatus] = useState(false);
-    const [scrollbarWidth, setTableScrollbarWidth] = useState(0);
+
+    const genDataUuid = init => {
+        const dataWidthUuid = data.map(row => {
+            return {
+                ...row,
+                uuid: row.uuid || _uniqueId('table_row__')
+            };
+        });
+
+        return dataWidthUuid;
+    };
+
+    const genHeaderColumns = init => {
+        const headerColumns = columns.slice();
+        if (fixedHeader) {
+            const newColumn = {
+                ...columns[columns.length - 1],
+                width: columns.width
+                    ? columns.width + scrollbarWidth
+                    : lastTdWidth + scrollbarWidth
+            };
+
+            headerColumns.splice(columns.length - 1, 1, newColumn);
+        }
+
+        return headerColumns;
+    };
+
     const [lastTdWidth, setLastTdWidth] = useState(0);
+    const [scrollbarWidth, setTableScrollbarWidth] = useState(0);
+    const [tableBodyScrollStatus, setTableBodyScrollStatus] = useState(false);
+    const [headerColumns, setHeaderColumns] = useState(genHeaderColumns(true));
+    const [tableData, setTableData] = useState(genDataUuid(true));
 
-    const emptyTableClass = data.length === 0 ? styles['table--empty'] : '';
-    const fixedHeaderClass = fixedHeader ? styles['table--fixed-header'] : '';
-    const hoverableTableClass = hoverable ? styles['table--hoverable'] : '';
-    const loadingTableClass = loading ? styles['table--loading'] : '';
+    useEffect(() => {
+        setTableData(genDataUuid());
+    }, [data]);
 
-    const headerColumns = columns.slice();
+    useEffect(() => {
+        setHeaderColumns(genHeaderColumns());
+    }, [
+        columns,
+        data,
+        fixedHeader,
+        height,
+        lastTdWidth,
+        loading,
+        scrollbarWidth,
+        width
+    ]);
 
-    if (fixedHeader) {
-        const newColumn = {
-            ...columns[columns.length - 1],
-            width: columns.width
-                ? columns.width + scrollbarWidth
-                : lastTdWidth + scrollbarWidth
-        };
-
-        headerColumns.splice(columns.length - 1, 1, newColumn);
-    }
-
-    const normalizedData = data.map(row => {
-        return {
-            ...row,
-            uuid: _uniqueId('table_row__')
-        };
-    });
+    const tableClassObj = {};
+    tableClassObj[styles.table] = true;
+    tableClassObj[styles[`table--${theme}`]] = true;
+    tableClassObj[styles['table--empty']] = data.length === 0;
+    tableClassObj[styles['table--fixed-header']] = fixedHeader;
+    tableClassObj[styles['table--hoverable']] = hoverable;
+    tableClassObj[styles['table--loading']] = loading;
 
     return (
         <TableContext.Provider value={context}>
@@ -76,19 +106,12 @@ const Table = ({
                 <table
                     {...props}
                     width={width ? `${width}px` : '100%'}
-                    className={`${cx(
-                        styles.table,
-                        styles[`table--${theme}`],
-                        emptyTableClass,
-                        fixedHeaderClass,
-                        hoverableTableClass,
-                        loadingTableClass
-                    )} ${className}`}
+                    className={`${cx(tableClassObj)} ${className}`}
                 >
                     <TableHeader columns={headerColumns} />
                     <TableBody
                         columns={columns}
-                        data={normalizedData}
+                        data={tableData}
                         emptyRender={emptyRender}
                         fixedHeader={fixedHeader}
                         height={height}
