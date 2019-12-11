@@ -23,9 +23,7 @@ export Table, { Pagination } from 'react-table';
 ```js
 yarn install
 ```
-
 or
-
 ```js
 npm install
 ```
@@ -36,10 +34,27 @@ npm install
 import Table, { Pagination } from './src';
 ```
 
+## Run styleguide in the local
+
+```js
+yarn dev
+```
+or
+```js
+npm dev
+```
+
+Then the styleguide will be served in http://localhost:8080/.
+
+It's able to modify the examples in `styleguide/examples` to see the change you made directly.
+
 ## Run test
 
 ```js
 yarn test
+```
+or
+```js
 npm run test
 ```
 
