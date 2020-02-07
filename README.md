@@ -6,6 +6,8 @@ A react table component which built with html `<table>` tags. (`table`, `thead`,
 - [x] Multi-theme
 - [x] See more samples on examples
 
+The component infra is built-up by [react-component-template](https://github.com/trendmicro-frontend/react-component-template)
+
 ## Get Start
 
 **Put all source files into a folder `react-table` first.**
