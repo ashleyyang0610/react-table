@@ -4,7 +4,7 @@ A react table component which built with html `<table>` tags. (`table`, `thead`,
 - [x] Pagination
 - [x] Sorting
 - [x] Multi-theme
-- [x] See more samples on examples
+- [x] See more samples on [examples](https://ashleyyang0610.github.io/react-table/)
 
 The component infra is built-up by [react-component-template](https://github.com/trendmicro-frontend/react-component-template)
 
