@@ -1,5 +1,11 @@
 # React Table
 
+A react table component which built with html `<table>` tags. (`table`, `thead`, `tbody`, `th`, `td`, etc)
+- [x] Pagination
+- [x] Sorting
+- [x] Multi-theme
+- [x] See more samples on examples
+
 ## Get Start
 
 **Put all source files into a folder `react-table` first.**
